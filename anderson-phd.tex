@@ -1,0 +1,162 @@
+%% Copyright 1998 Pepe Kubon
+%%
+%% `thes-full.tex' --- the example thesis, FULL version, used
+%%                     with  the `csthesis' package
+%% Use: latex thes-full to generate the DVI output, then
+%%      bibtex thes-full to generate the bibliography
+%%      makeindex thes-full to get the index, and
+%%      latex thes-full (2x)
+%%
+%% You are allowed to distribute this file together with all files
+%% mentioned in READ.ME.
+%%
+%% You are not allowed to modify its contents.
+%%
+
+
+\documentclass[10pt]{report}
+%\documentclass[11pt,twoside]{report}%% for two-sided printing
+%\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{pdfpages}
+\usepackage{anysize,fancyhdr,graphics}
+\usepackage{csthesis}
+\usepackage{makeidx}  %%% standard INDEX
+\usepackage[titletoc]{appendix}%%Ensure word appendix appears in toc
+\usepackage[pagebackref=true,pdfstartview=FitH,bookmarksopen=false,colorlinks,linkcolor=black,citecolor=black]{hyperref}
+
+
+\makeatletter
+\def\contentsline#1#2#3#4{%
+  \ifx\\#4\\%
+    \csname l@#1\endcsname{#2}{#3}%
+  \else
+    \csname l@#1\endcsname{%
+      \hyper@linkstart{link}{#4}{#2}\hyper@linkend
+    }{%
+      % same link destination for the page:
+      \hyper@linkstart{link}{#4}{#3}\hyper@linkend
+      % link destination is the page itself:
+      % \hyperpage{#3}%
+    }%
+  \fi
+} \makeatother
+
+
+\makeindex
+
+%%% The following code demonstrates the ``other list'' facility. A new
+%%% command \otherlist is defined for the List of Programs. Programs
+%%% are defined as floating environments of type 3 (1 is used for figures,
+%%% 2 for tables) and the information about them is stored in an
+%%% auxiliary file with .lop extension. You can use this method to
+%%% define several types of ``other lists,'' but in that case you'll
+%%% need to add appropriate code to \lists in the csthesis.sty
+%%% package.
+%%% Note: It's better to move this code into your own mythesis.sty
+%%% package. If you do that, you should get rid of the \makeatletter,
+%%% \makeatother commands.
+\makeatletter
+\newcommand\otherlist{%
+    \addcontentsline{toc}{chapter}{\otherlistname}
+    \if@twocolumn
+      \@restonecoltrue\onecolumn
+    \else
+      \@restonecolfalse
+    \fi
+    \chapter*{\otherlistname
+      \@mkboth{\MakeUppercase\otherlistname}%
+              {\MakeUppercase\otherlistname}}%
+    \@starttoc{lop}%
+    \if@restonecol\twocolumn\fi
+    }
+\newcommand*\l@program{\@dottedtocline{1}{1.5em}{2.3em}}
+\newcommand\otherlistname{List of Programs}
+\newcommand\programname{Program}
+\newcounter{program}[chapter]
+\renewcommand\theprogram{\thechapter.\@arabic\c@program}
+\def\fps@program{tbp}
+\def\ftype@program{3}
+\def\ext@program{lop}
+\def\fnum@program{\programname~\theprogram}
+\newenvironment{program}
+               {\@float{program}}
+               {\end@float}
+\newenvironment{program*}
+               {\@dblfloat{program}}
+               {\end@dblfloat}
+\makeatother
+%%% end of ``other list'' code
+
+\begin{document}
+\setlength{\pdfpagewidth}{8.5in}
+\setlength{\pdfpageheight}{11in}
+%%% set switches
+%\contentspagefalse
+\figurespagetrue
+\tablespagetrue
+\dedicationpagetrue
+\quotationpagetrue
+\otherlistpagetrue
+
+%%% front matter
+\include{titapp} %% title, approval
+
+%% Partial Copyright License (PCL)
+%% Please check the library online regulations & Forms, http://www.lib.sfu.ca/thesis
+\newpage
+\addcontentsline{toc}{chapter}{Partial Copyright License}
+\mbox{}
+\makeatletter
+\AddToShipoutPictureBG*{
+            \setlength{\@tempdimc}{.06\paperheight}
+            \setlength{\unitlength}{1pt}
+           \put(\strip@pt\@tempdimb,\strip@pt\@tempdimc){
+	\includegraphics{PCL_Declaration.pdf}
+	}
+}
+\makeatother
+\newpage
+
+\include{abstract} %% abstract
+%\include{dedquot} %% dedication and quotation, if any
+\include{ack} %%  acknowledgments
+
+%%%  generate contents, lists of figures, etc.
+\lists
+
+%% preface (foreword), if any
+\include{preface}
+
+%%% prepare main section
+\beforetext
+
+%%% main matter
+\include{one}
+\include{two}
+
+%%%%%%  bibliography
+\include{bibl}
+
+%%%  appendices, if any
+\begin{appendices}
+\include{appone}
+\include{apptwo}
+\end{appendices}
+
+
+%%%%%%  index
+\include{ind}
+
+\end{document}
+
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

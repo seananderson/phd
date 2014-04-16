@@ -1,0 +1,204 @@
+%% Copyright 1998 Pepe Kubon
+%%
+%% `two.tex' --- 2nd chapter for thes-full.tex, thes-short-tex from
+%%               the `csthesis' bundle
+%%
+%% You are allowed to distribute this file together with all files
+%% mentioned in READ.ME.
+%%
+%% You are not allowed to modify its contents.
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Chapter 2
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Changes from \textsf{sfuthesis.sty}}
+\label{two}
+
+\section{Page layout}
+
+All the changes\index{changes@changes from \textsf{sfuthesis.sty}} in
+this section are not required by the regulations%
+\index{thesis regulations}; they were made for better visual impact.
+
+The four margins\index{margins} were set by \textsf{sfuthesis.sty}%
+\index{sfuthesis.sty@\textsf{sfuthesis.sty}} to the values recommended
+in the regulations\index{thesis regulations}; these were kept
+unchanged. The space between the header\index{header} and the text was
+slightly reduced and made dependent on the chosen point size of the
+font (10, 11, or 12)\footnote{This text is set with 10pt size, which
+  seems to be the best choice overall from the three
+  possibilities.}---it now corresponds to one empty line of text.
+
+The space between the text and the footer\index{footer} is set to the result of
+adding half an empty line to the value of the space between the header
+and the text. This centers the text vertically on the page with
+respect to the other material. If, for any reasons, you decide to
+adjust the vertical placement of the text, only the value of
+\verb+\headsep+\index{headsep@\texttt{headsep}} needs to be modified.
+
+The first footnote\index{footnotes} is pushed slightly lower under the
+horizontal bar which separates footnotes from the text (see below). In
+addition,
+small vertical space separates individual footnotes on the page.\label{foot}%
+\footnote{This is an example of a second footnote on the page. I will
+  make it longer than the first one. As can be seen, the two footnotes
+  are separated by small vertical space.
+
+  This is a new paragraph in the second footnote. There is no
+  additional vertical space between
+  paragraphs in a footnote.}
+
+The vertical space before the
+\verb+paragraph+\index{paragraph@\texttt{paragraph}} and
+\verb+subparagraph+\index{subparagraph@\texttt{subparagraph}} sections
+was slightly reduced from the original values set by \LaTeX{}. The new
+values work better for the line spacing\index{line spacing} used in the text (see
+Appendix~\ref{app:spacing}).
+
+\section{Line spacing}
+\label{spacing}
+
+The style file defines three line spacing lengths:
+\verb+\textstretch+, \verb+\tighttextstretch+, and
+\verb+\doublestretch+. The first is used for the regular text. The
+second, which basically corresponds to the single spacing%
+\index{single spacing}on a typewriter, is used for footnotes (see
+page~\pageref{foot}) and inside tables\index{spacing in tables} (see
+Table~\ref{tab1}) and figures\index{spacing in figures} (see
+Figure~\ref{fig1})---including captions\index{spacing in captions}.
+The last corresponds to the double spacing\index{double spacing} on a
+typewriter and is used for the thesis title\index{title}, as required by the
+regulations\index{thesis regulations}.
+
+\begin{figure}[htbp]
+  \begin{center}
+    This shows that single line spacing\\
+    is used inside figures.
+    \caption{Example of a figure\label{fig1}}
+  \end{center}
+\end{figure}
+%
+\vspace*{-.3in}
+\begin{table}[htbp]
+  \begin{center}
+    \begin{tabular}[t]{|ll|}
+      \hline
+      This shows & the same thing\\
+      for tables. & \\
+      \hline
+    \end{tabular}
+    \caption{Example of a table\label{tab1}}
+  \end{center}
+\end{table}
+
+In addition, I recommend using single spacing also for
+bibliography\index{spacing in bibliography} and index%
+\index{spacing in index} (if included), as it is done in this
+document.%
+\footnote{This is now the accepted format for references.}\index{thesis regulations} The corresponding files
+\texttt{bibl.tex}\index{bibl.tex@\texttt{bibl.tex}} and
+\texttt{ind.tex}\index{ind.tex@\texttt{ind.tex}} show how to specify
+that single spacing be used.
+
+
+\section{Front matter}\index{front matter}
+
+\subsection{Title page}\index{Title page}
+
+The title\index{title} itself is set in bold face, capitalized, and double
+spaced. The vertical white space was changed from fixed to stretchable
+(and partially shrinkable) to allow for a better fit of the
+material---titles have varying amouns of lines and people can have
+several previous degrees.
+
+\subsection{Approval page}\index{Approval page}
+
+Essentially the same, only made easier to modify if the text doesn't
+fit on a single page or if you want to change the amount of white
+space between signatures.
+
+\subsection{Dedication and Quotation pages}
+\index{Dedication page}\index{Quotation page}
+
+The \textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}}
+package has a built-in support for optional Dedication and Quotation
+pages. Both dedication\index{dedication} and
+quotation\index{quotation} are typeset flushed right, dedication in
+\textit{italics} and quotation \textsl{slanted} (both are illustrated
+in the full version of this document). The pages are not titled, but
+they are numbered, and a corresponding entry is added to the Contents
+table.
+
+There are no constraints on the look of these pages imposed by the
+regulations\index{thesis regulations}, you can change the design as
+you see fit.
+
+\subsection{Contents}\index{Contents}
+\label{cont}
+
+The table of Contents was reverted back to the original design (for
+\textsf{report.sty}) from \LaTeX. There are no specific requirements
+in the regulations\index{thesis regulations} as to how the table
+should look like, but all the changes made to it in
+\textsf{sfuthesis.sty}\index{sfuthesis.sty@\textsf{sfuthesis.sty}}---reducing
+white space between chapters, putting dotted lines on the chapter
+level, or redefining the behavior of the \verb+\appendix+%
+\index{appendix@\texttt{\symbol{'134}appendix}}
+command---looked decidedly awful and so I got rid of them.
+
+
+\subsection{Preface}\index{Preface (Foreword)}
+
+The regulations\index{thesis regulations} allow for a Preface or
+Foreword section, which could contain a short blurb about ``why the
+author came to study the subject of the thesis.'' It's probably
+useless because nobody will want to write anything like that, but it's
+incorporated in the package for completeness. The optional inclusion
+of Preface necessitated the modification of the \verb+\afterpreface+%
+\index{appendix@\texttt{\symbol{'134}appendix}}
+command of
+\textsf{sfuthesis.sty}\index{sfuthesis.sty@\textsf{sfuthesis.sty}},
+which was replaced by two commands: \verb+\lists+%
+\index{lists@\texttt{\symbol{'134}lists}}, and
+\verb+\beforetext+\index{beforetext@\texttt{\symbol{'134}beforetext}}.
+
+\section{Back matter}\index{back matter}
+
+\subsection{Appendices}\index{appendices}
+
+As mentioned in Section~\ref{cont},
+\textsf{sfuthesis.sty}\index{sfuthesis.sty@\textsf{sfuthesis.sty}}
+redefines the \verb+\appendix+%
+\index{appendix@\texttt{\symbol{'134}appendix}} command of \LaTeX.
+Again, there does not seem to be any reason to do that (the
+regulations are silent on the formatting of appendices); and the
+original design looks better.  Thus, the present style reverts to
+\LaTeX's original design, where appendices are treated as chapters and
+numbered alphabetically. (The change in numbering is accomplished by
+issuing the
+\verb+appendix+\index{appendix@\texttt{\symbol{'134}appendix}} command
+before the text of the first appendix.)
+
+\subsection{Bibliography}\index{Bibliography}
+
+The \textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}}
+package does not influence the typesetting of Bibliography directly,
+but---as I said in Section~\ref{spacing}---I recommend changing the
+line spacing\index{spacing in bibliography} from normal to single, as
+was done in \texttt{bibl.tex}\index{bibl.tex@\texttt{bibl.tex}}.
+See the (fake) Bibliography of this document as an example of the
+result.
+
+\subsection{Index}\index{Index}
+
+The same comment applies to the optional Index section (see
+\texttt{ind.tex}\index{ind.tex@\texttt{ind.tex}} for how to
+adjust the line spacing\index{spacing in index} and the Index section
+of the full version of this document for the result).
+
+
+

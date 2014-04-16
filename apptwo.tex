@@ -1,0 +1,84 @@
+%% Copyright 1998 Pepe Kubon
+%%
+%% `apptwo.tex' --- 2nd appendix for thes-full.tex from
+%%                  the `csthesis' bundle
+%%
+%% You are allowed to distribute this file together with all files
+%% mentioned in READ.ME.
+%%
+%% You are not allowed to modify its contents.
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%        Appendix 2
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Illustrating Lists}\label{app:lists}
+\index{formatting of Lists}
+
+This appendix is present only in the full version of the thesis. It
+illustrates in more detail the formatting of the Lists of Tables,%
+\index{List of Tables}\index{List of Figures} Figures, etc. In
+addition, it also illustrates the use of the ``other list'' facility
+of \textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}}.
+Let us start with the latter.
+
+\section{List of Programs}
+\index{List of Programs}
+
+In the preamble of \texttt{thes-full.tex}%
+\index{thes-full.tex@\texttt{thes-full.tex}}, a new type of a floating
+environment---\texttt{program}%
+\index{program environment@\texttt{program} environment}---is defined,
+together with the \verb+\otherlist+%
+\index{otherlist@\texttt{\symbol{'134}otherlist}} command for
+typesetting the List of Programs. The list is formatted in the same
+way as the lists of Figures and Tables, and an appropriate entry is
+added into Contents.
+
+Because programs are defined here as floating environments, they are
+typeset with the same (tighter) line-spacing%
+\index{spacing in programs} as figures and tables:
+
+\begin{program}[htbp]
+  \begin{center}
+    This shows that single line spacing\\
+    is used inside programs.
+    \caption{Example of the new \texttt{program} environment\label{prog1}}
+  \end{center}
+\end{program}
+%
+\vspace*{-.3in}
+\begin{program}[htbp]
+  \begin{center}
+    A second example of a program environment.
+    \caption{Second program\label{prog2}}
+  \end{center}
+\end{program}
+
+\section{Formatting of Lists}
+
+The tables (figures, programs, etc.) are organized and sorted by
+chapters (appendices), with additional small vertical space separating
+the chapter blocks. To illustrate this, I include two new tables here
+(see List of Tables, etc., in the beginning of the thesis for the
+result)\index{formatting of Lists}:
+
+\begin{table}[htbp]
+  \begin{center}
+    To be silly or not to be silly\\
+    \emph{that} is the question!
+    \caption{First meaningless table in Appendix~\ref{app:lists}}
+  \end{center}
+\end{table}
+%
+\vspace*{-.3in}
+\begin{table}[htbp]
+  \begin{center}
+    $F = nd^{2}$
+    \caption{Second meaningless table in Appendix~\ref{app:lists}}
+  \end{center}
+\end{table}
+

@@ -1,0 +1,156 @@
+%% Copyright 1998 Pepe Kubon
+%%
+%% `one.tex' --- 1st chapter for thes-full.tex, thes-short-tex from
+%%                the `csthesis' bundle
+%%
+%% You are allowed to distribute this file together with all files
+%% mentioned in READ.ME.
+%%
+%% You are not allowed to modify its contents.
+%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%       Chapter 1
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Purpose}
+
+This document outlines the functionality of the style file (package)
+\textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}},
+suitable for writing theses in \LaTeXe{} at SFU.  The style file
+modifies and generalizes the
+\textsf{sfuthesis.sty}\index{sfuthesis.sty@\textsf{sfuthesis.sty}}, designed by
+Margaret Sharon from ACS. The changes were done for two reasons: 1)~to
+reflect the most recent regulations\index{thesis regulations} on SFU
+theses;\footnote{Please refer to http://www.lib.sfu.ca/theses to check for any changes to requirements.}  and
+2)~to improve the overall look of the theses. The changes will be
+illustrated and commented on in Chapter~\ref{two}; the following
+section summarizes the main features of the present package.
+
+\section{Main features of \textsf{csthesis.sty}}
+
+\begin{itemize}
+\item fully conforms to the most recent regulations%
+  \index{thesis regulations} on SFU theses;
+\item offers a visually pleasing design;
+\item supports all optional\index{optional material} thesis sections
+  (Dedication, Quotation, Preface, etc.) and simplifies their
+  inclusion;
+\item supports the \verb+twoside+%
+  \index{twoside option@\texttt{twoside} option} option of \LaTeX{}
+  and coordinates it with two-sided printing\index{two-sided
+    printing}---this is not allowed for the library copies, but you
+  should definitely consider it for other copies;
+\item comes with a full documentation\index{documentation}, describing
+  all available commands and identifying which parts of the code can
+  be modified and how to achieve specific effects (like
+  adding/removing white space between signatures on Approval page);
+\item comes with two files, illustrating the use of the package in
+  writing theses (you are reading one of them). The following section
+  describes all the files in the distribution in more detail.
+\end{itemize}
+
+\section{Distribution}
+
+The style file
+\textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}} is
+accompanied by several supporting files\index{auxiliary files}. These
+are:
+
+\begin{itemize}
+\item \texttt{READ.ME}: the file containing the copying and
+  distribution limitations, the installation instructions, the address
+  where to sent bug reports, and the listing of all the files included
+  in the \textsf{csthesis}%
+  \index{csthesis bundle@\textsf{csthesis} bundle} bundle;
+\item \texttt{csthesis.ins}\index{csthesis.ins@\texttt{csthesis.ins}}:
+  the installation file for
+  \textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}}. The
+  bundle comes unpacked and ready-to-use, so you don't need to
+  generate \textsf{csthesis.sty} this way, but the file is included to
+  allow for a more compact, packed version of the bundle.
+\item \texttt{csthesis.dtx}\index{csthesis.dtx@\texttt{csthesis.dtx}}:
+  the documented code for \textsf{csthesis.sty}. It lists all the user
+  commands defined by the style file and explains the code. In
+  particular, it points out the places where the code should be
+  modified in case you run into troubles like not being able to fit
+  the Approval section on one page.
+\item
+  \texttt{thes-short.tex}\index{thes-short.tex@\texttt{thes-short.tex}}:
+  an example of a thesis written using \textsf{csthesis.sty}. The
+  thesis is ``short'' in that it contains only the required parts of
+  the front matter (Abstract, Acknowledgment, Contents) but no
+  optional parts\index{optional material} (Dedication, Quotation, List
+  of Figures, List of Tables, List of ``other things,'' Preface). In
+  addition, the thesis does not contain the optional parts of the back
+  matter---appendices and Index.
+\item
+  \texttt{thes-full.tex}\index{thes-full.tex@\texttt{thes-full.tex}}:
+  an example of the ``full'' version of the same thesis, containing
+  all the optional parts\index{optional material} from the front
+  matter, several appendices, and Index.
+\item the \texttt{}\index{@\texttt{}} subdirectory:
+  the auxiliary files for \texttt{thes-short.tex} and
+  \texttt{thes-full.tex}.
+\item the \texttt{doc/}\index{doc/@\texttt{doc/}} subdirectory: the
+  ``printouts'' of the documentation\index{documentation} for the
+  package and for the two example theses.
+\end{itemize}
+
+You can use either of the two versions of the thesis as a guide in
+designing your own thesis file---but it's in your interest to take a
+look at both. The difference between the two versions is accomplished
+by 1)~the switches located right under the beginning of the
+\verb+document+ environment, 2)~inclusion/exclusion of the files
+containing optional thesis parts\index{optional material} (Preface,
+appendices, Index, etc.), and 3)~the inclusion of commands for
+generating the List of ``other things'' in the preamble of
+\texttt{thes-full.tex}\index{thes-full.tex@\texttt{thes-full.tex}}.
+
+The two thesis files demonstrate the use of the commands provided by
+the \textsf{csthesis.sty}\index{csthesis.sty@\textsf{csthesis.sty}}
+package. If a more thorough explanation of some command(s) is
+required, consult the
+\texttt{csthesis.dvi}\index{csthesis.dvi@\texttt{csthesis.dvi}} guide.
+
+\section{How to use \textsf{csthesis.sty}}
+
+If you're starting writing from scratch\index{starting new thesis}, all you
+need to do is to put the following two lines in the beginning of your
+thesis document:
+\begin{verbatim}
+\documentclass[11pt]{report}%% or 10pt, or 12pt
+\usepackage{csthesis}
+\end{verbatim}
+This makes all the commands defined in \textsf{csthesis.sty}%
+\index{csthesis.sty@\textsf{csthesis.sty}} available to you; you can
+consult the two examples theses and the
+\texttt{csthesis.dvi}\index{csthesis.dvi@\texttt{csthesis.dvi}} to see
+what commands\index{available commands} you have at your disposal and
+how they should be used.
+
+If you're upgrading%
+\index{upgrading@upgrading from \textsf{sfuthesis.sty}} from
+\textsf{sfuthesis.sty} to \textsf{csthesis.sty}, you also need to
+include the two lines mentioned above. In addition, though, you need
+to change some things in your thesis document because the two thesis
+formats are not fully compatible%
+\index{compatibility@compatibility with \textsf{sfuthesis.sty}}. In
+particular, you should:
+\begin{itemize}
+\item replace the \verb+\afterpreface+ command of
+  \textsf{sfuthesis.sty}\index{sfuthesis.sty@\textsf{sfuthesis.sty}}
+  with \verb+\lists+ and \verb+\beforetext+, inserted in appropriate
+  places (see the example theses);
+\item in case you're having one or more appendices\index{appendices}, issue
+  \verb+\appendix+ command after the last chapter of your thesis
+  before the first appendix. In addition, treat each appendix as a
+  chapter, i.e., the main heading of the appendix should use the
+  \verb+\chapter+ command.
+\end{itemize}
+These should be all changes you need to do---if there is more, let me
+know (I haven't used \textsf{sfuthesis.sty}%
+\index{sfuthesis.sty@\textsf{sfuthesis.sty}}, so I am to some extent
+guessing here based on the coding differences between the two packages).
