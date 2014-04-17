@@ -25,6 +25,30 @@
 \usepackage[titletoc]{appendix}%%Ensure word appendix appears in toc
 \usepackage[pagebackref=true,pdfstartview=FitH,bookmarksopen=false,colorlinks,linkcolor=black,citecolor=black]{hyperref}
 
+% custom packages:
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{lscape}
+\usepackage{geometry}
+%\usepackage[sectionbib]{chapterbib}
+
+\usepackage[round]{natbib}
+\bibpunct{(}{)}{;}{a}{}{;}
+
+
+% custom macros:
+\newcommand{\CV}{\mathrm{CV}}
+\newcommand{\tilmanPE}{mean-variance PE}
+\newcommand{\schindlerPE}{average-CV PE}
+\newcommand{\zvalue}{$z$-value}
+\newcommand{\drivers}{Fig.~\ref{fig:PE-drivers}}
+\newcommand{\driverszcol}{Fig.~\ref{fig:PE-drivers-z-colour}}
+\newcommand{\driverscor}{Fig.~\ref{fig:factors-cor}}
+
+% custom hyphenation:
+\hyphenation{meta-pop-ulation meta-pop-ulations sub-pop-ulations sub-pop-ulation}
 
 \makeatletter
 \def\contentsline#1#2#3#4{%
@@ -119,7 +143,7 @@
 \newpage
 
 \include{abstract} %% abstract
-%\include{dedquot} %% dedication and quotation, if any
+\include{dedquot} %% dedication and quotation, if any
 \include{ack} %%  acknowledgments
 
 %%%  generate contents, lists of figures, etc.
@@ -132,8 +156,9 @@
 \beforetext
 
 %%% main matter
-\include{one}
-\include{two}
+\include{prophets/anderson-etal-ecological-prophets}
+%\include{one}
+%\include{two}
 
 %%%%%%  bibliography
 \include{bibl}
