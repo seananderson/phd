@@ -6,7 +6,7 @@ pdf:
 force:
 	latexmk -g anderson-phd
 
-anderson-phd.bib: anderson-phd.aux refs.bib
+anderson-phd.bib: anderson-phd.aux ~/Dropbox/tex/ref3.bib ~/Dropbox/tex/jshort.bib
 	bibtool -x $< -o $@ -- 'expand.macros = ON'
 
 clean:
