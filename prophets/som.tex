@@ -1,0 +1,465 @@
+% \documentclass[12pt]{article}
+% %\pdfminorversion=4
+% \usepackage{geometry}
+% \geometry{letterpaper}
+% \usepackage{graphicx}
+% \usepackage{lscape}
+% \usepackage{comment}
+% \usepackage{setspace}
+% \usepackage{amsmath}
+% \usepackage[labelfont=bf,labelsep=period]{caption}
+% \renewcommand{\figurename}{Fig.}
+% \usepackage{booktabs}
+% \usepackage[sectionbib]{chapterbib}
+% \usepackage{url}
+% %\urlstyle{rm}
+% \usepackage{titlesec}
+% \usepackage[usenames,dvipsnames]{xcolor}
+% \DeclareTextCommandDefault{\nobreakspace}{\leavevmode\nobreak\ }
+%
+% \usepackage[round]{natbib}
+% \bibpunct{(}{)}{;}{a}{}{;}
+
+%\hyphenation{meta-pop-ulation meta-pop-ulations sub-pop-ulations sub-pop-ulation}
+
+%\newcommand{\CV}{\mathrm{CV}}
+
+%\title{Supporting Information for\\Ecological prophets:\\Quantifying metapopulation portfolio effects\\Methods in Ecology and Evolution}
+
+%\author{Sean C. Anderson$^{1*}$ \and Andrew B. Cooper$^2$ \and Nicholas K. Dulvy$^1$}
+
+%\date{}
+
+%\textheight 20.5cm
+
+%\setcounter{secnumdepth}{-2}
+
+%\newcommand{\tilmanPE}{mean-variance PE}
+%\newcommand{\schindlerPE}{average-CV PE}
+%\newcommand{\zvalue}{$z$-value}
+%
+%\newcommand{\drivers}{Fig.~\ref{fig:PE-drivers}}
+%\newcommand{\driverszcol}{Fig.~\ref{fig:PE-drivers-z-colour}}
+%\newcommand{\driverscor}{Fig.~\ref{fig:factors-cor}}
+
+
+%\newlabel{fig:didactic}{{1}{25}}
+%\newlabel{fig:lines}{{2}{26}}
+%\newlabel{fig:meta}{{3}{27}}
+%\newlabel{fig:detrend}{{4}{28}}
+%\newlabel{fig:paramspace}{{5}{29}}
+%\newlabel{fig:recommendations}{{6}{30}}
+
+%\begin{document}
+
+%\maketitle
+
+% \noindent
+%   \textsuperscript{1}Earth to Ocean Research Group, Department of Biological
+%   Sciences, Simon Fraser University, Burnaby BC, V5A 1S6, Canada
+%
+% \noindent
+% 	\textsuperscript{2}School of Resource and Environmental Management, Simon
+%   Fraser University, Burnaby, BC, V5A 1S6, Canada
+%
+% \noindent
+% 	\textsuperscript{*}Corresponding author: sean\_anderson@sfu.ca
+%
+%\newpage
+
+%\begin{spacing}{1.2}
+%\section{Ecological prophets: Quantifying metapopulation portfolio effects}
+%\noindent
+%Sean C. Anderson, Andrew B. Cooper, Nicholas K.  Dulvy
+
+%\section*{Supporting Information}
+
+\chapter{Supporting materials}{Supporting materials for Ecological prophets: quantifying metapopulation portfolio effects}
+
+\section{\texttt{R} package to estimate metapopulation portfolio effects}
+
+In an \texttt{R} console, the \texttt{ecofolio} package can be installed either
+from the included source package (\texttt{.tar.gz} file)
+%, from the Mac or
+%Windows binary packages (\texttt{.tgz} or \texttt{.zip}, respectively)
+or via the web (instructions below). First, install dependencies if needed:
+
+\begin{verbatim}
+install.packages(c("plyr", "reshape", "MuMIn", "robustbase"))
+\end{verbatim}
+
+\noindent
+Then, to install the included package:
+
+%install.packages("ecofolio_0.1.tar.gz", type = "source")
+
+\begin{verbatim}
+install.packages("mee312093-sup-0001-Sourcepackage.tar.gz", type = "source")
+\end{verbatim}
+
+%install.packages("ecofolio_0.1.tgz") # Mac binary
+%install.packages("ecofolio_0.1.zip") # Windows binary
+
+\noindent
+or to install the current version from the web:
+
+\begin{verbatim}
+install.packages("devtools") # if needed
+devtools::install_github("ecofolio", username = "seananderson")
+\end{verbatim}
+
+\noindent
+Current code and install details are available at\\ \url{https://github.com/seananderson/ecofolio}
+\clearpage
+
+%Install details are available at:
+%\url{https://github.com/seananderson/ecofolio}
+
+\noindent
+You can load the package, read the vignette, and access the help pages with:
+
+\begin{verbatim}
+library(ecofolio)
+vignette("ecofolio")
+help(package = "ecofolio")
+\end{verbatim}
+
+\section{Data sources for the empirical portfolio effect analysis}
+We sought to include as many metapopulation time series from as diverse
+taxonomic groups as possible. However, due to availability, the included data
+primarily represent metapopulations in North America (salmon), the United
+Kingdom (moths), and Australia (reef fishes) (Figure~\ref{fig:map}). We show a
+summary of the data included in our analysis of empirical ecological systems
+in Table S1 and the time series in Figure~\ref{fig:ts}.
+
+\subsection{Salmon}
+We obtained salmon data from a variety of sources, in particular
+\citet{dorner2008}. Most of the salmon populations are from the northwest
+coast of North America, but also: Kola Peninsula, Russia
+\citep{jensen1999}, southern New England \citep{kocik2006}, and
+Central Valley, California \citep{carlson2011} (Figure~\ref{fig:map}). All
+data represent annual estimated returns --- fisheries catch plus escapement to
+the spawning grounds. We divided pink salmon annual estimated returns into odd-
+and even-year time series due to their strongly distinct runs that do not
+interbreed \citep{quinn2005}. To maintain consistency with previous PE
+analyses involving sockeye salmon \citep{schindler2010} and analyses of
+time series of these data \citep{dorner2008}, and due to the less distinct
+separate runs \citep{quinn2005}, we did not divide the sockeye salmon into
+separate runs.
+
+Subsets of these salmon data have been used in numerous analyses relating
+diversity with stability. A particular feature of the salmon literature is a
+focus on the role of ``biocomplexity'' --- a diversity of life-histories and
+local adaptations to the environment --- in producing stability
+\citep{hilborn2003} and recent papers have focussed on measuring the
+portfolio effects we investigate in this paper \citep{schindler2010,
+  carlson2011}. In studying the mechanisms behind subpopulation
+asynchrony, and hence portfolio effects, studies of Pacific salmon have
+generally focussed on drivers that fall into two categories: (1) landscape
+filtering of the environment so that different subpopulations experience
+different environmental forces (e.g.\ local topology affecting stream flow)
+\citep[e.g.][]{schindler2008}, and (2) biologically-based response
+diversity to the environment (e.g.\ genetically-based variation in thermal
+tolerances) \citep[e.g.][]{eliason2011}. These patterns of asynchrony can
+play out not just at the decadal scale but also over centuries
+\citep{rogers2013}.
+
+\subsection{Moths}
+We obtained moth abundance time series from the Rothamsted Insect Survey
+(RIS). L. R. Taylor started the trap network that forms the RIS in the early
+1960s; the RIS is now one of the longest-running and largest-scale insect
+surveys in the world \citep{conrad2004}. Details on the survey are
+available in \citet{conrad2004} and \citet{taylor1986}. The RIS
+captures moths by light traps \citep{williams1948} placed 1--2 m above
+ground; these traps catch small but reliable samples of moth populations
+\citep{williams1948, taylor1974, conrad2004}. Although
+different species may show different responses to the traps
+\citep{muirhead-thomson1991, woiwod1992}, we compare across sites
+within the same species so this should not affect our results.
+
+Our moth data spanned from 1999--2010 for 13 species (Table~S1) and 28 sites
+(Table~\ref{tab:ris-meta}). We included only moths with single broods per year
+(univoltine moths) and single annual flight episodes since we were aggregating
+the data annually to maintain consistency with data from other taxonomic
+groups that were available. We removed site-species combinations where there
+were eight or more years with zero moths caught in traps to avoid sites where
+a given species was exceptionally rare and not likely to be consistently
+censused. This removed 97 subpopulations leaving 280. Further culling of
+populations according to the criteria in the Methods section left us with 268
+subpopulations. All the species included are common within Great Britain,
+although some have undergone declines in abundance since the RIS began
+\citep{conrad2004}.
+
+Earlier versions of these moth data featured heavily in the work of
+Taylor and colleagues on the property now known as Taylor's power law
+\citep{taylor1977, taylor1980, perry1981}. This early work
+focussed on behavioural properties that might regulate the stability and
+variance of moth populations \citep{taylor1980}. Work has continued with
+these datasets and studies have shown a number of mechanisms generating
+stability. For example, authors have shown spatial asynchrony
+\citep{gaston1988}, polyphagy (eating different kinds of food)
+\citep{redfearn1988}, and density dependence to act as stabilizing forces
+\citep{hanski1993}.
+
+\subsection{Reef fishes}
+
+We obtained reef visual census fish counts within the Greater Barrier Reef
+(GBR) from the Australian Institute of Marine Science's (AIMS) Long-term
+Monitoring Program (LTMP) \citep{sweatman2008}. The AIMS survey data used
+here are from fixed transects at selected sites across 46 reefs from
+1994--2010 (Table~\ref{tab:grb-meta}). Details of the sampling design are
+available from \citet{halford1994}. Briefly, AIMS surveys reef fish
+annually within six sectors of the GBR. AIMS identifies inner-, \mbox{mid-,}
+and outer-shelf positions and three reefs within each shelf position. Within
+each reef, AIMS chooses three sites of the same habitat and establishes five
+permanent 50m transects at 6--9m depth 10m apart and parallel to the reef
+crest. Divers count damselfishes (Pomacentrids) on 1m-wide transects and all
+other families on 5m-wide transects. AIMS only censuses fish one year or older
+since recruitment can be highly spatially and temporally variable. AIMS
+conducts annual standardization exercises to avoid temporal bias in counts
+within and across divers \citep{halford1994}.
+
+A number of recent studies have used these reef-fish data to
+investigate stability-diversity relationships, often focusing on functional
+diversity or reef size and isolation. For example, \citet{thibaut2012}
+found strong asynchrony of response to the environment between three functional
+groups of herbivorous reef fishes, which lead to greater stability. Another
+benefit to this functional diversity may be increased disease resistance
+\citep{raymundo2009}, presumably enhancing stability. Independent of
+functional roles, \citet{mellin2010} found that small, isolated reefs have
+higher population variability and therefore higher probability of local
+extinction.
+
+\section{Diagnosing the ecological properties of empirical portfolio effects}
+
+We overlaid the empirical PEs in their respective theoretical parameter space
+to investigate the ecological properties of real-world metapopulations
+(subpopulation correlation, mean-variance scaling, subpopulation number
+richness, and evenness). Specifically, we matched the empirical
+linear-regression z values and the number of subpopulations with their
+theoretical counterparts.
+
+To present our results graphically in Figure~\ref{fig:paramspace}, we categorized
+the mean correlation of the empirical subpopulations ($\bar{\rho}$) into bins of
+$0 \le \bar{\rho} < 0.25$, $0.25 \le \bar{\rho} < 0.5$, and $0.50 \le \bar{\rho}
+< 75$ and matched these with the theoretical PE estimated at the midpoints of
+these bins (i.e.\ 0.125, 0.375, and 0.625).  We matched the disparity in
+subpopulation size by: (1) calculating the CV of the log of the subpopulation
+time series' means, $\CV(\log\mu)$; (2) categorizing the empirical
+metapopulations into bins of $0 \le \CV(\log\mu) < 0.3$, $0.3 \le \CV(\log\mu) <
+0.6$, and $0.6 \le \CV(\log\mu) < 0.9$; (3) estimating the theoretical PE using
+evenly-spaced values from a log-normal distribution with a mean of two and
+standard deviation of the midpoints of these bins (i.e.\ 0.15, 0.45, and 0.75).
+Here and in Figure~\ref{fig:lines}, we derived these evenly-spaced values as
+follows.
+We drew subpopulation ($i$) quantiles $q_i$ from the evenly-spaced sequence:
+$a_1, a_2, \ldots, a_n$, where $a_1 = 1/(n+1)$ and $a_n = 1-(1/(n+1))$. We then
+calculated the subpopulation means at each $q_i$ from a log-normal distribution
+with log-mean of two and a log-standard deviation of the ``unevenness value''
+times the log-mean.
+
+%\renewcommand{\thetable}{A\arabic{table}}
+%\setcounter{table}{0}
+
+%\renewcommand{\thefigure}{A\arabic{figure}}
+%\renewcommand{\figurename}{Figure}
+%\setcounter{figure}{0}
+
+\begin{landscape}
+
+
+  \input{prophets/supp-data-table}
+\end{landscape}
+\clearpage
+
+\input{prophets/ris-meta.tex}
+\clearpage
+\input{prophets/gbr-reef-fish.tex}
+\clearpage
+
+\begin{figure}[htbp] \centering
+
+  \includegraphics[width=\textwidth]{prophets/PE_data_series_ms.pdf}
+  \caption{
+    Subpopulation time series. Each panel contains one metapopulation.
+    Colours were randomly assigned to distinguish subpopulations.
+    Numbers in top-left corners refer to metapopulation IDs (see Table S1).
+  } \label{fig:ts}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[htbp]
+  \centering \includegraphics[width=5.5in]{prophets/PE_map_20120718.pdf}
+  \caption{
+    Map of included metapopulations.  We represented salmon metapopulations
+    with orange symbols, moths with purple, and reef fishes with pink.
+    Numbers refer to metapopulation IDs (Table~S1).  Points are jittered
+    slightly for visual clarity.
+  }
+  \label{fig:map}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{prophets/taylor-fits-scatter-20120720.pdf}
+  \caption{ Calculation of the \tilmanPE\ using Taylor's power law. Each
+    dark-grey circle  represents the log($\mu$) and log($\sigma^2$) of an
+    individual subpopulation timeseries.  The orange lines represent fitted
+    linear regressions.  The green lines represent fitted quadratic
+    regressions.  Black \texttt{x} symbols represent the observed
+    metapopulation or portfolio mean and variance.  Dashed lines indicate the
+    extrapolation of the model fit to the observed metapopulation or portfolio
+    mean and variance.  Open-orange circles represent the predicted variance
+    under the linear-fit assumption.  Open-green diamonds represent the
+    predicted variance under the quadratic-fit assumption.  Metapopulations in
+    which the predicted variance is greater than the observed variance
+    represent variance-reducing PEs.  We ordered the panels by decreasing
+    Taylor's power law \zvalue\ (slope of the linear regression) within
+    taxonomic groupings.  Numbers in upper left of panels refer to
+    metapopulation IDs (Supplementary Table 1)}
+\label{fig:Taylor-fits}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=6.6in]{prophets/Taylor_z_values.pdf}
+  \caption{
+    Taylor's power law z values across metapopulations. Points represent maximum
+    likelihood estimates, thick line segments represent 50\% confidence
+    intervals, and thin line segments represent 95\% confidence intervals. The
+    vertical dashed line at z = 2 represents the value assumed by the average-CV
+    PE method.
+}
+\label{fig:z-vals}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=4in]{prophets/inter-vs-intra-pop-z-seg-2-0-20121019.pdf}
+  \caption{ Intra- vs.\ inter-subpopulation mean-variance scaling relationship
+    (Taylor's power law $z$-value).  Our estimation of the empirical
+    mean-variance PE assumes that the inter-subpopulation $z$-value can
+    approximate the intra-subpopulation $z$-value.  We use the
+    inter-subpopulation $z$-value throughout our paper.  Here, we have also
+    calculated the intra-subpopulation $z$-value for subpopulation time series
+    in which the mean abundance in the 1\textsuperscript{st} or
+    2\textsuperscript{nd} half of the time series is twice the magnitude of
+    the other half.  Points represent median intra-subpopulation $z$-values
+    within each metapopulation and vertical line segments represent
+    1\textsuperscript{st} and 3\textsuperscript{rd} quartile values.  The
+    dashed-red line represents a one-to-one relationship and the solid-grey
+    line (under the one-to-one line) represents a linear regression of the
+    median intra-subpopulation $z$-values with inter-subpopulation $z$-values.
+    Symbols represent salmon (crosses), moths (triangles), and reef fishes
+    (circles).}
+  \label{fig:inter-vs-intra-z}
+\end{figure}
+
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=6.8in]{prophets/PE_comparison_z_meta_taxa_quad_20121214.pdf}
+  \caption{
+    PEs with the \textbf{mean-variance PEs estimated from a quadratic model}.
+    See Figure~\ref{fig:meta} for details.
+}
+\label{fig:meta-quad}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=6.8in]{prophets/PE_comparison_z_meta_taxa_lin_quad_avg_20121214.pdf}
+  \caption{PEs with the \textbf{mean-variance PEs estimated from a
+      linear-quadratic averaged model}. See Figure~\ref{fig:meta} for details.}
+\label{fig:meta-lin-quad-avg}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=6.8in]{prophets/PE_comparison_z_meta_detrend_taxa_20121214.pdf}
+  \caption{PEs from \textbf{linear detrended} time series. See
+    Figure~\ref{fig:meta} for details.
+}
+\label{fig:meta-detrend}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=6.8in]{prophets/PE_comparison_z_meta_loess_detrend_taxa_20121214.pdf}
+  \caption{PEs from \textbf{loess detrended} time series. See
+    Figure~\ref{fig:meta} for details.
+}
+\label{fig:meta-detrend-loess}
+\end{figure}
+\clearpage
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{prophets/PE-parameter-space-labels-20120614.pdf}
+  \caption{Empirical ecological PEs (points) overlaid in theoretical PE
+    parameter space (colour shading). \textbf{This is the same as
+    Figure~\ref{fig:paramspace} except that here we indicate the empirical PE values
+      beside the points}. The colour shading indicates the
+    stabilizing-effect of the theoretical mean-variance PEs (a--i) and
+    average-CV PEs (j--r): red indicates a stabilizing effect and blue indicates
+    a destabilizing effect.
+    The dashed lines indicate neutral PEs. Columns from left to right
+    show systems with increasingly uneven subpopulation sizes,
+    and rows from top to bottom show systems with increasingly strong mean
+    correlation between subpopulation
+}
+\label{fig:paramspace-labels}
+\end{figure}
+\clearpage
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{prophets/parameter-space-predicted-vs-observed-20120430.pdf}
+  \caption{ Predicted vs.\ observed mean-variance (\textbf{a}) and average-CV
+    PEs (\textbf{b}).  Predicted PEs correspond to the colour underlying the
+    metapopulations displayed in Figure~\ref{fig:paramspace}; observed PEs to
+    the values calculated directly from the empirical data and shown in
+    Figure~\ref{fig:meta}. The predicted PEs are approximate due to other
+    statistical properties of the data beyond the four examined in
+    Figure~\ref{fig:paramspace}, and due to grouping the $CV_{mu}$ and
+    correlation values from the metapopulations to match the displayed
+    theoretical values in the bins.  Numbers indicate the metapopulation IDs
+    used throughout the paper (Table S1).  The solid sloped lines indicate
+    one-to-one relationships.  Note that all axes have been log transformed
+    and the two panels have separate axis limits.  }
+  \label{fig:PE-predicted-observed}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=4.6in]{prophets/bias_factors_cross_correlation.pdf}
+  \caption{Relationship between the drivers of the PE in empirical systems for
+    moths (red), reef fishes (purple), and salmon (blue).  The area of the
+    filled circles corresponds to the strength of the \tilmanPE\ with larger
+    circles corresponding to more stabilizing PEs.  Line segments indicate
+    95\% confidence intervals.}
+  \label{fig:factors-cor}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=5in]{prophets/PE-as-index.pdf}
+  \caption{ The PE used as an index of ecosystem change.  The upper panel
+    shows the mean-variance PE and the lower panel the average-CV PE.  The
+    horizontal axis shows Taylor's power law $z$-value.  The vertical axis
+    shows the change in the PE (more stabilizing = $+$, less stabilizing =
+    $-$).  The panels from left to right indicate an increase in the number of
+    subpopulations ($n + 1$), Taylor's power law $z$-value ($z + 1$),
+    subpopulation unevenness ($CV_{\mu} + 0.1$), or the correlation between
+    subpopulations ($r + 0.1$). The quantities added are arbitrary and the
+    results would look the same for any quantity added greater than zero.  Each
+    dot represents an empirical metapopulation and the colour indicates the
+    observed empirical PE using the same colour scale as Figs.~4~and~5. The dots
+    are jittered vertically slightly for visual clarity.  }
+  \label{fig:PE-as-an-index}
+\end{figure}
+
+%\end{spacing}
+
+%\end{document}
