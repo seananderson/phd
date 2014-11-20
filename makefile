@@ -3,8 +3,12 @@ all: pdf
 pdf:
 	latexmk anderson-phd
 
+force:
+	latexmk -g anderson-phd
+
+anderson-phd.bib: anderson-phd.aux refs.bib
+	bibtool -x $< -o $@ -- 'expand.macros = ON'
+
 clean:
 	latexmk -c anderson-phd
-
-extractbib: anderson-phd.pdf
-	bibtool -x anderson-phd.aux -o refs.bib -- 'expand.macros = ON'
+	rm -f anderson-phd.bib
