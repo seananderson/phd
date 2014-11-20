@@ -11,4 +11,4 @@ pdftwo:
 	pdflatex anderson-phd
 
 clean:
-	rm *.fls *.bbl *.out *.aux *.fdb_latexmk *.ilg *.ind *.lof *.lop *.lot *.out *.synctex.gz *.toc *.log *.idx
+	latexmk -c anderson-phd
