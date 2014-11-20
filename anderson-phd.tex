@@ -14,16 +14,18 @@
 %%
 
 
-\documentclass[10pt]{report}
+\documentclass[11pt]{report}
 %\documentclass[11pt,twoside]{report}%% for two-sided printing
 %\usepackage{helvet}
-\renewcommand{\familydefault}{\sfdefault}
+%\renewcommand{\familydefault}{\sfdefault}
 \usepackage{pdfpages}
 \usepackage{anysize,fancyhdr,graphics}
 \usepackage{csthesis}
 \usepackage{makeidx}  %%% standard INDEX
 \usepackage[titletoc]{appendix}%%Ensure word appendix appears in toc
 \usepackage[pagebackref=true,pdfstartview=FitH,bookmarksopen=false,colorlinks,linkcolor=black,citecolor=black]{hyperref}
+\usepackage[originalparameters]{ragged2e}
+\usepackage{array}
 
 % custom packages:
 \usepackage{graphicx}
@@ -121,7 +123,7 @@
 \tablespagetrue
 \dedicationpagetrue
 \quotationpagetrue
-\otherlistpagetrue
+%\otherlistpagetrue
 
 %%% front matter
 \include{titapp} %% title, approval
@@ -150,13 +152,18 @@
 \lists
 
 %% preface (foreword), if any
-\include{preface}
+%\include{preface}
 
 %%% prepare main section
 \beforetext
 
 %%% main matter
-\include{prophets/anderson-etal-ecological-prophets}
+\include{introduction}
+%\include{review/main}
+\include{prophets/main}
+%\include{neutral/main}
+\include{metafolio/main}
+\include{discussion}
 %\include{one}
 %\include{two}
 
@@ -165,8 +172,11 @@
 
 %%%  appendices, if any
 \begin{appendices}
-\include{appone}
-\include{apptwo}
+\include{prophets/som}
+%\include{neutral/som}
+\include{metafolio/som}
+%\include{appone}
+%\include{apptwo}
 \end{appendices}
 
 
