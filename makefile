@@ -6,6 +6,14 @@ pdf:
 force:
 	latexmk -g anderson-phd
 
+introduction.tex: introduction.md ~/Dropbox/tex/ref3.bib
+	pandoc -S --no-wrap --bibliography=/~/Dropbox/tex/jshort.bib --bibliography=~/Dropbox/tex/ref3.bib --natbib $< -o $@
+	perl -p -i -e "s/Figure /Figure~/g" introduction.tex
+	perl -p -i -e "s/Fig\. /Fig.~/g" introduction.tex
+	perl -p -i -e "s/vs\. /vs.~/g" introduction.tex
+	perl -p -i -e "s/Table /Table~/g" introduction.tex
+	perl -p -i -e "s/Figs\. /Figs.~/g" introduction.tex
+
 anderson-phd.bib: prophets/main.aux prophets/som.aux metafolio/main.aux metafolio/som.aux blackswans/main.aux blackswans/som.aux ~/Dropbox/tex/ref3.bib ~/Dropbox/tex/jshort.bib
 	bibtool -x $< -o $@ -- 'expand.macros = ON'
 
