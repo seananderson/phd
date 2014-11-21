@@ -23,9 +23,12 @@
 \usepackage{csthesis}
 \usepackage{makeidx}  %%% standard INDEX
 \usepackage[titletoc]{appendix}%%Ensure word appendix appears in toc
-\usepackage[pagebackref=true,pdfstartview=FitH,bookmarksopen=false,colorlinks,linkcolor=black,citecolor=black]{hyperref}
+%\usepackage[x11names,hyperref]{xcolor}
+\usepackage{hyperref}
+\hypersetup{pagebackref=false,pdfstartview=FitH,bookmarksopen=false,colorlinks,linkcolor=black,urlcolor=black,citecolor=black}
 \usepackage[originalparameters]{ragged2e}
 \usepackage{array}
+\usepackage{verbatim}
 
 % custom packages:
 \usepackage{graphicx}
@@ -34,10 +37,14 @@
 \usepackage{booktabs}
 \usepackage{lscape}
 \usepackage{geometry}
-%\usepackage[sectionbib]{chapterbib}
+\usepackage{chapterbib}
 
 \usepackage[round]{natbib}
 \bibpunct{(}{)}{;}{a}{}{;}
+\usepackage{longtable}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{tabu} % for spacing between rows in longtable
 
 % Linux Libertine:
 \usepackage{textcomp}
@@ -58,6 +65,8 @@
 \newcommand{\drivers}{Fig.~\ref{fig:PE-drivers}}
 \newcommand{\driverszcol}{Fig.~\ref{fig:PE-drivers-z-colour}}
 \newcommand{\driverscor}{Fig.~\ref{fig:factors-cor}}
+
+\mathchardef\mhyphen="2D % math hyphen
 
 % custom hyphenation:
 \hyphenation{meta-pop-ulation meta-pop-ulations sub-pop-ulations sub-pop-ulation}
@@ -169,25 +178,33 @@
 
 %%% main matter
 \include{introduction}
-%\include{review/main}
 \include{prophets/main}
-%\include{neutral/main}
-\include{metafolio/main}
-\include{discussion}
-%\include{one}
-%\include{two}
-
-%%%%%%  bibliography
-\include{bibl}
-
-%%%  appendices, if any
 \begin{appendices}
 \include{prophets/som}
-%\include{neutral/som}
-\include{metafolio/som}
-%\include{appone}
-%\include{apptwo}
 \end{appendices}
+
+\include{metafolio/main}
+\begin{appendices}
+\include{metafolio/som}
+\end{appendices}
+
+\input{analysis/values} % R output
+\include{blackswans/main}
+\begin{appendices}
+\include{blackswans/som}
+\end{appendices}
+
+\include{discussion}
+
+%%%%%%  bibliography
+%\include{bibl}
+
+%%%  appendices, if any
+%\begin{appendices}
+%\include{prophets/som}
+%\include{metafolio/som}
+%\include{blackswans/som}
+%\end{appendices}
 
 
 %%%%%%  index
