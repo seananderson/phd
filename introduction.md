@@ -1,4 +1,4 @@
-# Introduction
+\chapter[Introduction]{Introduction}
 
 In the coming century we face a loss of biodiversity on the order of
 100--10,000 times greater than average rates in the fossil record [@mea2005]
