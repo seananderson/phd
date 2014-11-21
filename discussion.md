@@ -70,6 +70,8 @@ ecological portfolios, we may need to adopt methods that can incorporate
 measurement error. Solutions may include Bayesian methods, Monte Carlo
 simulation, and state space modelling [@morgan1990].
 
+\input{data-table.tex}
+
 # Opportunities
 
 ## Ecological portfolio optimization
