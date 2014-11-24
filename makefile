@@ -54,3 +54,4 @@ synctails:
 	perl -p -i -e "s/\\\end{spacing}/\% \\\end{spacing}/g" blackswans/som.tex
 	perl -p -i -e "s/\\\renewcommand{/\%/g" blackswans/som.tex
 	perl -p -i -e "s/\\\setcounter{/\%/g" blackswans/som.tex
+	perl -p -i -e "s/Supporting Information\\\/\%/g" blackswans/som.tex
