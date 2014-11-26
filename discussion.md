@@ -30,16 +30,16 @@ role of response diversity in stabilizing populations, metapopulations, and comm
 
 ## Multidimensional ecological attributes
 
-Ecological decision making is often a multidimensional problem. For example, a
-manager needs to balance resources available for hunting or fishing with
+Ecological decision making is often a multidimensional problem. For example,
+a manager needs to balance resources available for hunting or fishing with
 leaving sufficient resources for ecosystem stability and function. But,
 financial portfolio optimization typically deals with one dimension---financial
 returns. Therefore, at first glance it might appear that portfolio optimization
 is only applicable to a narrow range of ecological decision making. On the
 contrary, existing approaches developed for other decision making tools can
 allow portfolio theory to be applied to multidimensional objectives. For
-instance, the roots of decision analysis (REF) [@keeney1976; @keeney1982], a
-formal method for evaluating complex decision problems, deals with decision
+instance, the roots of decision analysis (REF) [@keeney1976; @keeney1982],
+a formal method for evaluating complex decision problems, deals with decision
 making for one-dimensional objectives. But, decision analysis is commonly
 extended to multiple objectives by condensing objectives into a single
 dimension through multiattribute utility theory [@keeney1976] or presenting the
