@@ -208,43 +208,11 @@ metapopulation productivity given choices about what habitat to conserve under
 climate change and stream-flow reduction scenarios [@anderson2014]. We see this
 as a promising but largely unexplored use of ecological portfolio theory.
 
-# Ecological theory to draw from
+In Chapter 2, I...
 
-Portfolio theory can unite many existing ecological theories (Table
-\ref{tab:theory}). For example, community ecology, the theory of island
-biogeography, metapopulation dynamics, and functional-group ecology can all
-generate portfolio-like ecological structure. Importantly, the portfolios
-produced by these scenarios have specific features that affect portfolio
-dynamics. For example, in community portfolios, predator assets can eat
-portions of prey assets, which has no direct equivalent in financial
-portfolios. In metapopulation portfolios, subpopulation assets can exchange
-individuals between each other and rescue subpopulation assets at low abundance
-or value.
+In Chapter 2, I...
 
-Other ecological theories can inform expected patterns of diversification and
-portfolio dynamics (Table \ref{tab:theory}). For instance, the Moran effect
-suggests that ecological assets that are further apart from each other are more
-likely to experience diverse environments and therefore provide greater
-portfolio diversification. The unified neutral theory of biodiversity and
-biogeography asks what we would observe if species were functionally
-equivalent. We can think of this neutral community as an undiversified
-portfolio and compare it to observed communities to examine the benefit of
-functional diversity. This comparison is analogous to the ecological
-portfolio-effect metric [e.g. @doak1998; @schindler2010; @anderson2015].
-
-Finally, a variety of mechanisms can generate ecological portfolio
-diversification (Table \ref{tab:theory}). For instance, intraspecific trait
-variation, response diversity, and even personality variation can be thought of
-as sources of portfolio diversification. Ecological portfolios therefore can
-have multiple levels of diversification, just as financial portfolios can be
-diversified across multiple levels such as investment types, geography,
-business sectors, and individual stocks. Whereas research on many of these
-ecological sources of diversification exists in its own niche, ecological
-portfolio theory encourages us to consider many elements in conjunction.
-
-\input{theory-table.tex}
-
-TODO introduce the data chapters here
+In Chapter 3, I...
 
 \bibliographystyle{apalike}
 \bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}
