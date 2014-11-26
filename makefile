@@ -1,10 +1,13 @@
-all: pdf
+all: abstract.tex introduction.tex discussion.tex anderson-phd.bib pdf dropbox
 
 pdf:
 	latexmk anderson-phd
 
 force:
 	latexmk -g anderson-phd
+
+abstract.tex: abstract.md
+	pandoc $< -o $@
 
 introduction.tex: introduction.md ~/Dropbox/tex/ref3.bib
 	pandoc -S --no-wrap --bibliography=/~/Dropbox/tex/jshort.bib --bibliography=~/Dropbox/tex/ref3.bib --natbib $< -o $@
@@ -55,3 +58,6 @@ synctails:
 	perl -p -i -e "s/\\\renewcommand{/\%/g" blackswans/som.tex
 	perl -p -i -e "s/\\\setcounter{/\%/g" blackswans/som.tex
 	perl -p -i -e "s/Supporting Information\\\/\%/g" blackswans/som.tex
+
+dropbox:
+	cp anderson-phd.pdf ~/Dropbox/Public/
