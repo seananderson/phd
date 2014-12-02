@@ -199,5 +199,9 @@ recommendations:
    diversity and its impact on risk, uncertainty, and variability to
    conservation managers and the public.
 
+\renewcommand{\baselinestretch}{\tighttextstretch}
+\normalsize
 \bibliographystyle{apalike}
 \bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}
+\renewcommand{\baselinestretch}{\textstretch}
+\normalsize
