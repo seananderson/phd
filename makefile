@@ -1,4 +1,4 @@
-all: abstract.tex introduction.tex discussion.tex anderson-phd.bib pdf dropbox
+all: ack.tex abstract.tex introduction.tex discussion.tex anderson-phd.bib pdf dropbox
 
 pdf:
 	latexmk anderson-phd
@@ -7,6 +7,9 @@ force:
 	latexmk -g anderson-phd
 
 abstract.tex: abstract.md
+	pandoc $< -o $@
+
+ack.tex: ack.md
 	pandoc $< -o $@
 
 introduction.tex: introduction.md ~/Dropbox/tex/ref3.bib
