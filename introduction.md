@@ -28,20 +28,21 @@ Nearly a decade ago, @figge2004 and @koellner2006 laid the foundation for why
 concepts from financial portfolio theory are ideally suited to addressing these
 questions. Financial portfolio theory seems applicable to ecological systems
 for at least four reasons. First, like financial systems, ecological systems
-are structured hierarchically (REF). Groups of populations form metapopulations
-and groups of species form communities; groups of financial assets form
-investment funds, which in turn form portfolios. Additionally, ecological and
-financial managers have similar goals. Ecological resource managers might wish
-to minimize the probability of population decline while maintaining an
-acceptable level of hunting or fishing; financial portfolio managers minimize
-the probability of large economic losses for an acceptable level of expected
-financial returns [@may2008]. Another reason why portfolio theory is ideally
-suited for ecology is that substantial resources have gone into developing
-mathematical theory for optimizing financial investments (REF). There is
-therefore a rich body of theory and experience to draw from. Finally, the
-portfolio metaphor is an engaging and accessible way for ecologists to think
-about variance and biological diversity and convey the importance of this
-(often abstract) literature.
+are structured hierarchically [@odum1959; @holling2001]. Groups of populations
+form metapopulations and groups of species form communities; groups of
+financial assets form investment funds, which in turn form portfolios.
+Additionally, ecological and financial managers have similar goals. Ecological
+resource managers might wish to minimize the probability of population decline
+while maintaining an acceptable level of hunting or fishing; financial
+portfolio managers minimize the probability of large economic losses for an
+acceptable level of expected financial returns [@may2008]. Another reason why
+portfolio theory is ideally suited for ecology is that substantial resources
+have gone into developing mathematical theory for optimizing financial
+investments [e.g. @markowitz1952; @rachev2008]. There is therefore a rich body
+of theory and experience to draw from. Finally, the portfolio metaphor is an
+engaging and accessible way for ecologists to think about variance and
+biological diversity and convey the importance of this (often abstract)
+literature.
 
 A number of recent studies have used financial portfolios as a metaphor,
 metric, or management approach (Fig. \ref{fig:traits}) to estimate and
@@ -204,22 +205,23 @@ refers to both the probability of an undesired event happening and the
 magnitude of loss associated with that event [@morgan1990; @reckhow1994]. It is
 increasingly common in the financial literature to assume that that rate of
 change of financial asset value follows a distribution that is heavier tailed
-than the normal distribution REF. First, there is ample evidence that financial
-returns are in fact heavy tailed. Second, the consequences to portfolio
-optimization of assuming normal-tailed returns when they are in fact heavy
-tailed can have dramatic consequences for risk forecasts and hence portfolio
-investment decisions REF. For example, normal tailed returns would not allow
-for the stock market crash of 2008, but we know that events this extreme are
-not only possible, they have happened XX times in the last 100 years.
+than the normal distribution [@rachev2008]. First, there is ample evidence that
+financial returns are heavy tailed. Second, the consequences to portfolio
+optimization of assuming normal-tailed returns when they are heavy tailed can
+have dramatic consequences for risk forecasts and hence portfolio investment
+decisions (REF). For example, normal tailed returns would not allow for the
+stock market crash of 2008, but we know that events this extreme are not only
+possible, they have happened TODO times in the last 100 years.
 
 @taleb2007 writes about the concept of heavy-tailed events in detail. He coined
 the term 'black swan' to refer to events that are extremely improbable, but
 nonetheless occur, often with profound consequences. Furthermore @taleb2007
 suggests that black swans are usually unpredictable but are rationalized in
-retrospect. In fact, many of the major events that have shaped recent human
-history could be considered black swan events. The beginning of World War II
-could be considered a black swan. The great depression could be considered a
-black swan. Even the XX could be considered a black swan. 
+retrospect. Many of the major events that have shaped recent human history
+could be considered black swan events. The beginning of World War II could be
+considered a black swan. The great depression could be considered a black swan.
+Even the TODO could be considered a black swan.  (TODO, this paragraph is still
+rough)
 
 Ecology has likewise seen a move towards focusing on risk and extremeness
 [@jentsch2007; @thompson2013, Fig. \ref{fig:wos}]. Recent work in ecology has
@@ -227,14 +229,14 @@ noted the frequency and influence of population dynamic catastrophes
 [@gerber2001; @ward2007], ecological surprises [@lindenmayer2010; @doak2008],
 counterintuitive responses of populations to management [@pine-iii2009], and
 even explored how the specific concept of black swans could apply to ecology
-and evolution [@nunez2012]. In fact, discussion of the importance of
-catastrophic events has a long history in the ecological literature. As early
-as 1898, @bumpus1899 observed that a severe winter storm off Providence, Rhode
-Island killed a disproportionate number of very small and large sparrows (and
-this thesis uncovers a number of other observations from the 1800s). In the
-1990s, both @sugihara1990 (under the concept of fractals) and @mangel1994
-(under the concept of catastrophes) highlighted extreme events as perhaps the
-most important force behind how long species persist in nature.
+and evolution [@nunez2012]. Discussion of the importance of catastrophic events
+has a long history in the ecological literature. As early as 1898, @bumpus1899
+observed that a severe winter storm off Providence, Rhode Island killed a
+disproportionate number of very small and large sparrows (and this thesis
+uncovers a number of other observations from the 1800s). In the 1990s, both
+@sugihara1990 (under the concept of fractals) and @mangel1994 (under the
+concept of catastrophes) highlighted extreme events as perhaps the most
+important force behind how long species persist in nature.
 
 
 \begin{figure}[htbp]
