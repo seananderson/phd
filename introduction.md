@@ -197,21 +197,20 @@ use of portfolio theory in ecology.
 # Extreme risk
 
 Early work in financial portfolio optimization focussed on mean-variance
-portfolio optimization [@markowitz1952]. But even by the late 1950s, Markowitz
-had started focussing on more specific aspects of risk instead of variance
-[@markowitz1959]. Whereas variance puts equal weight on upward and downward
-events, risk specifically refers to both the probability of an undesired event
-happening and the magnitude of loss associated with that event [@morgan1990;
-@reckhow1994]. It is increasingly common in the financial literature to assume
-that that rate of change of financial asset value follows a distribution that
-is heavier tailed than the normal distribution REF. First, there is ample
-evidence that financial returns are in fact heavy tailed. Second, the
-consequences to portfolio optimization of assuming normal-tailed returns when
-they are in fact heavy tailed can have dramatic consequences for risk forecasts
-and hence portfolio investment decisions REF. For example, normal tailed
-returns would not allow for the stock market crash of 2008, but we know that
-events this extreme are not only possible, they have happened XX times in the
-last 100 years.
+portfolio optimization [@markowitz1952]. But even by the late 1950s,
+@markowitz1959 was suggesting we consider risk instead of variance. Whereas
+variance puts equal weight on upward and downward events, risk specifically
+refers to both the probability of an undesired event happening and the
+magnitude of loss associated with that event [@morgan1990; @reckhow1994]. It is
+increasingly common in the financial literature to assume that that rate of
+change of financial asset value follows a distribution that is heavier tailed
+than the normal distribution REF. First, there is ample evidence that financial
+returns are in fact heavy tailed. Second, the consequences to portfolio
+optimization of assuming normal-tailed returns when they are in fact heavy
+tailed can have dramatic consequences for risk forecasts and hence portfolio
+investment decisions REF. For example, normal tailed returns would not allow
+for the stock market crash of 2008, but we know that events this extreme are
+not only possible, they have happened XX times in the last 100 years.
 
 @taleb2007 writes about the concept of heavy-tailed events in detail. He coined
 the term 'black swan' to refer to events that are extremely improbable, but
