@@ -36,7 +36,7 @@ Finally, I take the concept of black swans (extreme and unexpected events) from
 the financial literature and ask what the evidence is for these events across
 hundreds of bird, mammal, insect, and fish abundance time series. I find strong
 evidence for the infrequent (3--5%) occurrence of ecological black swans. Black
-swans are predominantly (~90%) downward events and tend to be associated with
+swans are predominantly (87%) downward events and tend to be associated with
 extreme climate, natural enemies (predators and parasites), or the combined
 effects of multiple factors, with little relationship to life history. My
 thesis demonstrates the importance of conserving ecological properties that may
