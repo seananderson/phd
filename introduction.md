@@ -1,28 +1,30 @@
 <!--# Notes from elsewhere:-->
 
-<!--Similar to ecologists, financial analysts have long been interested in how and under what conditions diversity (of investments or assets) can promote stability (of a portfolio of assets). Ecologists and financial analysts have suggested both that ecological theory could improve our understanding of financial systems \citep[e.g.][]{May:2008:CSE,Haldane:2011:SRB} and that financial theory could improve our understanding of ecological systems \citep[e.g.][]{Tilman:1998:DSR,Figge:2004:BAP,Koellner:2006:BEI}. This thesis aims to further the latter proposition.-->
+<!--Similar to ecologists, financial analysts have long been interested in how
+    and under what conditions diversity (of investments or assets) can promote
+    stability (of a portfolio of assets). Ecologists and financial analysts
+    have suggested both that ecological theory could improve our understanding
+    of financial systems \citep[e.g.][]{May:2008:CSE,Haldane:2011:SRB} and that
+    financial theory could improve our understanding of ecological systems
+    \citep[e.g.][]{Tilman:1998:DSR,Figge:2004:BAP,Koellner:2006:BEI}. This
+    thesis aims to further the latter proposition.-->
 
-
+<!--TODO: cite @moore2014a?-->
 
 \chapter[Introduction]{Introduction}
 
-<!--TODO: cite @moore2014a-->
-
 In the coming century we face a loss of biodiversity on the order of
-100--10,000 times greater than average rates in the fossil record [@mea2005]
---- a rate as fast if not faster than any of the five past mass extinctions
-[@barnosky2011; @harnik2012]. Compounding this problem for conservation
-managers is uncertainty in future climate conditions [@heller2009] and the
-unknown responses of species and communities to those conditions
-[@lavergne2010]. Therefore, several urgent question need to be addressed:
+100--10,000 times greater than average rates in the fossil record
+[@mea2005]---a rate as fast if not faster than any of the five past mass
+extinctions [@barnosky2011; @harnik2012]. Compounding this problem for
+conservation managers is uncertainty in future climate conditions [@heller2009]
+and the unknown responses of species and communities to those conditions
+[@lavergne2010]. Therefore, several urgent questions need to be addressed:
 Exactly how big a problem is the loss of biodiversity for the stability of
 ecological systems? How can conservation biologists communicate the insurance
 benefit of biodiversity to the public and policy makers? And, how can we apply
 limited conservation funds to manage biodiversity and limit risk in the face of
 increasing environmental uncertainty?
-
-
-<!--TODO: cite Odum or a paper from Jon's paper in for hierarchy?-->
 
 Nearly a decade ago, @figge2004 and @koellner2006 laid the foundation for why
 concepts from financial portfolio theory are ideally suited to addressing these
@@ -71,7 +73,7 @@ concept has long been used as a metaphor to emphasize the need to not put all
 your eggs in one basket. This metaphor has come into particular prominence in
 recent decades. For example, the IUCN Criterion B2a recognizes the risks
 associated with a species existing in few locations [@iucn2001]. As another
-example, ecologists have suggested the need to bet hedge by developing a
+example, ecologists have suggested the need to bet-hedge by developing a
 portfolio of approaches when tackling conservation issues [e.g. @ehrlich2008].
 Ecologists have also used the metaphor to refer to diverse ecosystems and
 communities as portfolios of species [@figge2004]. 
@@ -107,18 +109,16 @@ systems [@thibaut2013]. Violation of these assumptions, for example, the
 assumption that the temporal standard deviation scales directly with the mean,
 or that populations are approximately equal in size, can distort our perception
 of the portfolio effect and hence the perceived benefit of diversity to
-ecological stability. It is this issue that I tackle in Chapter 2, where I
-consider a simple portfolio-effect metric that has been used to infer the
-stabilizing effects of population diversity in salmon metapopulations. I extend
-the theoretical work of @doak1998 and @tilman1998 to develop an additional
+ecological stability. I tackle this issue in Chapter 2, where I consider a
+simple portfolio-effect metric that has been used to infer the stabilizing
+effects of population diversity in salmon metapopulations. I extend the
+theoretical work of @doak1998 and @tilman1998 to develop an additional
 empirical portfolio effect that accounts for the population abundance
 mean-variance relationship and unequal population sizes. I show how these
 metrics theoretically differ and how they differ in practice when applied to
-TODO metapopulations from around the world. I conclude by making practical
+metapopulations from around the world. I conclude by making practical
 recommendations for ecologists when choosing how to measure ecological
 portfolio effects.
-
-<!--TODO Bring in the @gross2013 paper and metric and give more details on @thibaut2013 - give examples-->
 
 # Ecological portfolio management
 
@@ -154,20 +154,20 @@ from \citeauthor{hoekstra2012} (\citeyear{hoekstra2012}).
 \label{fig:mpt}
 \end{figure}
 
-First, we can consider existing management structures that create systems
-analogous to diversified portfolios. For example, fishers can engage in
-catch-pooling cooperatives where fishers share the profits from their catches
-according to predefined rules. @sethi2012 showed that this portfolio-like
-scheme reduces risk for red king crab fishers in the Bering Sea by up to 40%.
-Other fisheries management tools, such as community-based management,
-individual transferable quotas, and licensing systems that allow for fishing a
-diversity of species, can create diversified catch portfolios for fishers and
-buffer fishers against the risk of poor profits [@hilborn2001; @kasperski2013].
-Alternatively, we can consider the properties of a diversified portfolio, such
-as representation, resilience, and redundancy, and look for management
-strategies that promote these properties in ecological systems [@haak2012]
+First, we can identify resource management structures that promote diverse
+portfolios. For example, fishers can engage in catch-pooling cooperatives where
+fishers share the profits from their catches according to predefined rules.
+@sethi2012 showed that this portfolio-like scheme reduces risk for red king
+crab fishers in the Bering Sea by up to 40%. Other fisheries management tools,
+such as community-based management, individual transferable quotas, and
+licensing systems that allow for fishing a diversity of species, can create
+diversified catch portfolios for fishers and buffer fishers against the risk of
+poor profits [@hilborn2001; @kasperski2013]. Alternatively, we can consider the
+properties of a diversified portfolio, such as representation, resilience, and
+redundancy, and look for management strategies that promote these properties in
+ecological systems [@haak2012]
 
-We can also use portfolio theory directly to optimally allocate harvesting
+Second, we can use portfolio theory directly to optimally allocate harvesting
 efforts. This suggestion is not new---some of the earliest references to
 ecological portfolios suggest portfolio theory as a management tool
 [@baldursson1997; @costanza2000] and interest in the topic expanded in
@@ -182,46 +182,50 @@ grazing animals on Australia's rangelands. With few exceptions, however, the
 application of portfolio theory for harvesting decisions has been limited to
 fishery and forestry examples.
 
-Finally, we can use ecological portfolio management to choose how we allocate
-conservation efforts to manage risk for an ecological system as a whole. For
-example, portfolio optimization can be used to spatially allocate conservation
-activity for wetlands to maximize ecosystem services at a given level of risk
-under the uncertainty of climate change [@ando2011; @ando2012]. In forestry,
-portfolio theory has been used to select the optimal weighting of seed sources
-for regenerating forests under a variety of climate change scenarios
-[@crowe2008]. In Chapter 3, I use portfolio theory to assess the risk-return
-trade-off for salmon metapopulation productivity and persistence given choices
-about what habitat to conserve under climate change and stream-flow reduction
-scenarios. I show that TODO and see this as a promising but largely unexplored
-use of portfolio theory in ecology.
+Finally, we can use ecological portfolio management to allocate conservation
+efforts to manage risk for an ecological system as a whole. For example,
+portfolio optimization can be used to spatially allocate conservation activity
+for wetlands to maximize ecosystem services at a given level of risk under the
+uncertainty of climate change [@ando2011; @ando2012]. In forestry, portfolio
+theory has been used to select the optimal weighting of seed sources for
+regenerating forests under a variety of climate change scenarios [@crowe2008].
+I focus on this last issue for Chapter 3, where I use portfolio theory to
+assess the risk-return trade-off for salmon metapopulation productivity and
+persistence given choices about what habitat to conserve under climate change
+and stream-flow reduction scenarios. I show that TODO and see this as a
+promising but largely unexplored use of portfolio theory in ecology.
 
 # Extreme risk
 
 Early work in financial portfolio optimization focussed on mean-variance
 portfolio optimization [@markowitz1952]. But even by the late 1950s,
-@markowitz1959 was suggesting we consider risk instead of variance. Whereas
+@markowitz1959 was suggesting we consider *risk* instead of variance. Whereas
 variance puts equal weight on upward and downward events, risk specifically
 refers to both the probability of an undesired event happening and the
 magnitude of loss associated with that event [@morgan1990; @reckhow1994]. It is
 increasingly common in the financial literature to assume that that rate of
-change of financial asset value follows a distribution that is heavier tailed
+change of financial asset value follows a distribution that is heavier-tailed
 than the normal distribution [@rachev2008]. First, there is ample evidence that
 financial returns are heavy tailed. Second, the consequences to portfolio
 optimization of assuming normal-tailed returns when they are heavy tailed can
 have dramatic consequences for risk forecasts and hence portfolio investment
 decisions (REF). For example, normal tailed returns would not allow for the
 stock market crash of 2008, but we know that events this extreme are not only
-possible, they have happened TODO times in the last 100 years.
+possible, they have happened with surprising frequency in the last 100 years
+REF?.
 
-@taleb2007 writes about the concept of heavy-tailed events in detail. He coined
-the term 'black swan' to refer to events that are extremely improbable, but
-nonetheless occur, often with profound consequences. Furthermore @taleb2007
-suggests that black swans are usually unpredictable but are rationalized in
-retrospect. Many of the major events that have shaped recent human history
-could be considered black swan events. The beginning of World War II could be
-considered a black swan. The great depression could be considered a black swan.
-Even the TODO could be considered a black swan.  (TODO, this paragraph is still
-rough)
+@taleb2007 writes about the concept of heavy-tailed events in detail. He uses
+the term 'black swan' to refer to surprising and improbable events that have
+major consequences and are typically rationalized in retrospect. The discovery
+of a single black swan is sufficient to disprove the hypothesis that all swans
+are white. Many of the major events that have shaped recent human history could
+be considered black swan. For example, with hindsight, World War II was a black
+swan. TODO The great depression could be considered a black swan. In recent
+years, the fields of finance and sociology have moved towards systematically
+measuring these heavy-tailed events [@sornette2009; @janczura2012;
+@johnson2013b].
+
+<!--bar-yaslam guy - complexity institute-->
 
 Ecology has likewise seen a move towards focusing on risk and extremeness
 [@jentsch2007; @thompson2013, Fig. \ref{fig:wos}]. Recent work in ecology has
@@ -233,10 +237,10 @@ and evolution [@nunez2012]. Discussion of the importance of catastrophic events
 has a long history in the ecological literature. As early as 1898, @bumpus1899
 observed that a severe winter storm off Providence, Rhode Island killed a
 disproportionate number of very small and large sparrows (and this thesis
-uncovers a number of other observations from the 1800s). In the 1990s, both
-@sugihara1990 (under the concept of fractals) and @mangel1994 (under the
-concept of catastrophes) highlighted extreme events as perhaps the most
-important force behind how long species persist in nature.
+uncovers a number of other catastrophic events from the 1800s). In the 1990s,
+both @sugihara1990 (under the concept TODO CHANGE of fractals) and @mangel1994
+(under the concept of catastrophes) highlighted extreme events as perhaps the
+most important force behind how long species persist in nature.
 
 
 \begin{figure}[htbp]
@@ -263,13 +267,17 @@ In Chapter 4, I explore the concept of black swans in population dynamics by
 asking how often and how severely process deviations---the multiplicative
 stochastic jumps in abundance from time step to time step---are more heavy
 tailed than the commonly assumed normal distribution. I develop and simulation
-test a Bayesian heavy-tailed Gompertz population model and apply it to hundreds
-of populations from around the world. I find strong evidence for black swan
-dynamics, although they are rare and unrelated to life-history characteristics.
-Importantly, the black swan events are almost always downwards events, which
-given previous work on the importance of catastrophes to population persistence
-times, has important implications for estimates of extinction risk that
-typically rely on normal-tailed population dynamics.
+test a black-swan detection method based on a heavy-tailed Gompertz population
+model and apply it to hundreds of populations of mammals, birds, insects, and
+fishes. I find strong evidence for black swan dynamics, although they are rare
+and unrelated to life-history characteristics. Importantly, the black swan
+events are almost always downwards events, which given previous work on the
+importance of catastrophes to population persistence times, has important
+implications for estimates of extinction risk that typically rely on
+normal-tailed population dynamics. TODO WRAP UP SENTENCE PARAPHRASE THIS:
+Together, my thesis further develops the expanding field of ecological
+portfolios and in doing so contributes to our understanding of variance
+(chapter 2), covariance (chapter..., and extreme events in ecological systems.
 
 <!--Risk assessment is a critical component to biological conservation and
     management [@burgman2005]. Conservation biology has typically used metrics
