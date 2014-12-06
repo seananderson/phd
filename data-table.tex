@@ -1,9 +1,9 @@
 \LTcapwidth=\textwidth
-\bibpunct{}{}{;}{a}{}{;}
+%\bibpunct{}{}{;}{a}{}{;}
 %\singlespacing
 \begin{footnotesize}
 
-\begin{longtable}{>{\RaggedRight}p{2.7cm}>{\RaggedRight}p{3.3cm}>{\RaggedRight}p{3.9cm}>{\RaggedRight}p{4.2cm}}
+\begin{longtable}{>{\RaggedRight}p{2.4cm}>{\RaggedRight}p{3.3cm}>{\RaggedRight}p{3.9cm}>{\RaggedRight}p{3.9cm}}
 
 \caption{Attributes of financial and ecological data and their implications for ecological portfolios.}\\
 \toprule
@@ -17,27 +17,28 @@
 
 Interdependence &
 A diverse portfolio is unlikely to have strong dependence between assets &
-Populations may be impacted by changes in other populations of the same species (e.g.\ competition or migration) or other species (e.g.\ predation) &
-Interactions need to be accounted for; forecasts may be less reliable\\
+Populations may be affected by changes in other populations of the same species (e.g.\ competition or migration) or other species (e.g.\ predation) &
+Interactions may need to be accounted for; greater uncertainty in ecological
+portfolios\\
 
 Measurement error &
-Reported asset value is the true value that impacts an investor &
-Recorded data typically includes substantial measurement error and may be biased &
+There is no measurement error &
+There is often substantial measurement error and biased &
 Uncertainty needs to be propagated through analyses\\
 
 Frequency and duration &
-High frequency (e.g.\ seconds), often regular recording intervals, missing values rare, long durations &
-Lower frequency (often years), often irregular recording intervals, missing values common, often short durations &
+High frequency, regular recording intervals, missing values are rare, long durations &
+Lower frequency, often irregular recording intervals, missing values common, often short durations &
 Greater uncertainty in optimal solutions; time-series methods require unique approach (e.g.\ missing values may need to be imputed, autocorrelation different)\\
 
-Synchrony &
-Relatively low synchrony for diversified portfolios &
-Relatively high synchrony for similar populations or species; potential asynchrony due to species interactions &
-Potentially less benefit from portfolio diversification; species interactions may alter portfolio dynamics\\
+%Synchrony &
+%Relatively low synchrony for diversified portfolios &
+%Relatively high synchrony for similar populations or species; potential asynchrony due to species interactions &
+%Potentially less benefit from portfolio diversification; species interactions may alter portfolio dynamics\\
 
 Mean-variance scaling &
 Variance scales directly with investment &
-Variance may scale indirectly with investment if asset size itself is considered an investment weight &
+Variance may scale indirectly with investment &
 The mean-variance relationship may need to be accounted for (\citeauthor{anderson2013} \citeyear{anderson2013})\\
 
 Number of assets &
