@@ -140,8 +140,8 @@
 %\contentspagefalse
 \figurespagetrue
 \tablespagetrue
-\dedicationpagetrue
-\quotationpagetrue
+%\dedicationpagetrue
+%\quotationpagetrue
 %\otherlistpagetrue
 
 %%% front matter
@@ -164,7 +164,7 @@
 \newpage
 
 \include{abstract} %% abstract
-\include{dedquot} %% dedication and quotation, if any
+%\include{dedquot} %% dedication and quotation, if any
 \include{ack} %%  acknowledgments
 
 %%%  generate contents, lists of figures, etc.
@@ -179,20 +179,20 @@
 %%% main matter
 \include{introduction}
 \include{prophets/main}
-\begin{appendices}
-\include{prophets/som}
-\end{appendices}
+%\begin{appendices}
+%\include{prophets/som}
+%\end{appendices}
 
 \include{metafolio/main}
-\begin{appendices}
-\include{metafolio/som}
-\end{appendices}
+%\begin{appendices}
+%\include{metafolio/som}
+%\end{appendices}
 
 \input{blackswans/analysis/values} % R output
 \include{blackswans/main}
-\begin{appendices}
-\include{blackswans/som}
-\end{appendices}
+%\begin{appendices}
+%\include{blackswans/som}
+%\end{appendices}
 
 \bibpunct{(}{)}{;}{a}{}{;}
 
