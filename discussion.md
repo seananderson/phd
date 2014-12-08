@@ -110,44 +110,17 @@ simulation, and state space modelling [@morgan1990].
 
 \input{data-table.tex}
 
-TODO --- ADD PARAGRAPH HERE BRINGING THIS BACK TOGETHER statistical techniques
-improves, I've made a contribution to improving them.. but still issues... data
-will accrue over time.... some new ecology to do interactions and synchrony...
-mainstay of ecology... think about for PE ... Ludwig paper - fishing, whaling
-we're increasingly good at propagation of uncertainty and dealing with and
-making management systems that are robust to uncertainty ... paragraph that
-bring back together the table this can only get better, my thesis has benefited
-from these huge datasets,not available  a decade ago but in addition... there
-are some big issues that need to be thought of in the context of port
-management
-
-<!--We now know that portfolio effects are present for resource users [e.g.
-    fishers @kasperski2013], environmental variables [e.g. stream flow
-    @moore2014a] and population dynamics [@schindler2010; @anderson2013]. But
-    how strong are they, what properties of systems make them stronger, and how
-    can we enact policy that promotes these benefits?-->
-
-<!--- for resource users -->
-<!--- allow them to integrate across diverse assets-->
-<!--- integrate spatially-->
-<!--- integrate across species-->
-<!--- and maybe even gear types-->
-<!--- pooling of rights / profits may help - ITQs, catch pooling cooperatives-->
-
-<!--outlook for biodiv. appl.c sloss, more robust, climate change connects back
-    to biodiversity and look back at gerber papers-->
-
-<!--INTEGRATE THIS WITH OTHERS?-->
-<!--2. How can we integrate established principles of conservation management with-->
-   <!--portfolio theory? Furthermore, what elements of portfolio theory can we-->
-   <!--integrate with traditional principles of ecological management?-->
-
-<!--Variance scales with investment-->
-<!--not necessarily scale-->
-<!--- this can only improve in the future...-->
-<!--collection of data will improve into the future-->
-<!--in preamble to data... a few more e.g.s-->
-
+While there are still problems to solve before we can fully explore the
+application of portfolio concepts to ecological systems, the availability of
+appropriate data and relevant statistical methods continues to improve. Higher
+frequency, longer duration, and spatially explicit ecological data that we can
+apply portfolio concepts to will continue to accrue. My thesis has benefited
+from a number of large datasets, many of which were not available a decade ago.
+Likewise, statistical tools for propagating uncertainty and fitting complex
+spatio-temporal models are improving rapidly, e.g., TMB: @kristensen2014,
+R-INLA: @rue2014, Stan: @stan-manual2014. The availability of appropriate data
+and methods will continue to improve and the application of quantitative
+portfolio concepts to ecology is likely to expand.
 
 # Outlook
 
