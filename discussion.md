@@ -9,11 +9,11 @@ recommendations for measuring portfolio effects. My third chapter explores how
 we can apply portfolio optimization concepts to inform decisions about
 conservation prioritization. My fourth chapter rigorously assesses the evidence
 for extreme events in population ecology. Together, my thesis further develops
-  the expanding field of ecological portfolios and in doing so contributes to
-  our understanding of variance, covariance, and extreme events in ecological
-  systems. In this general discussion, I summarize theoretical and
-  methodological advances of my thesis. I conclude by considering future
-  challenges and questions for the field to address.
+the expanding field of ecological portfolios and in doing so contributes to
+our understanding of variance, covariance, and extreme events in ecological
+systems. In this general discussion, I summarize theoretical and
+methodological advances of my thesis. I conclude by considering future
+challenges and questions for the field to address.
 
 My thesis makes a number of theoretical and methodological contributions to the
 study of variance and extremeness in ecology. I extend a classic feature of
@@ -139,13 +139,6 @@ representation, resilience, and redundancy can be integrated into conservation
 decision making without any formal quantitative application of portfolio theory
 [@haak2012].
 
-<!--- for resource users -->
-<!--- allow them to integrate across diverse assets-->
-<!--- integrate spatially-->
-<!--- integrate across species-->
-<!--- and maybe even gear types-->
-<!--- pooling of rights / profits may help - ITQs, catch pooling cooperatives-->
-
 Third, will shifting climate isotherms [@burrows2011; @pinsky2013] combined
 with increases in the frequency and magnitude of climate extremes
 [@easterling2000; @ipcc2012] translate to a greater probability of population
@@ -168,25 +161,6 @@ mechanisms and approaches that can cope with those. Ultimately, diverse natural
 portfolios of populations, species, and habitats are a critical component to
 maintaining stability and buffering against ecological catastrophes and
 resource-use collapses in an increasingly stressful world.
-
-<!--the last chapter underscores...-->
-
-<!--My last chapter focuses on extreme events for individual populations and most of the black swan events I detected were related to climate. While diverse ecological portfolios can buffer variance, they may be particularly well suited to buffer population extremes. To do so, -->
-
-<!--Most of the black swan events I found were extreme events were climate related... a diversity of habitat availability or genetic diversity can help protect against extreme climate as the population has pockets of diverse 'assets'-->
-
-
-<!--# Recommendations-->
-
-<!--I make the following recommendations:-->
-
-<!--1. Consider whether conservation problems can fit into a portfolio framework. Simultaneously considering how management actions affect mean responses and variability (or risk) of responses is a powerful conservation management tool and can be integrated with decision analysis.-->
-
-<!--2. Portfolio optimization can be applied right now in cases where 'investors', 'assets', and 'reinvestment' concepts are clear and where there are a limited number of objectives to optimize. For example, we can use portfolio optimization to set habitat conservation priorities for salmon populations under climate change uncertainty [@anderson2014].-->
-
-<!--3. A rich area of research is exploring how we can apply portfolio optimization to ecological decision making for systems where data properties differ substantially from financial data. Another important area of applied research is determining how we can operationalize the outputs of ecological portfolio optimization into conservation decisions.-->
-
-<!--4. Even if not used as a research tool, portfolios provide a compelling metaphor to communicate the sometimes-abstract concept of biological diversity and its impact on risk, uncertainty, and variability to conservation managers and the public.-->
 
 \renewcommand{\baselinestretch}{\tighttextstretch}
 \normalsize
