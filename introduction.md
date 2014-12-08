@@ -190,10 +190,9 @@ uncertainty of climate change [@ando2011; @ando2012]. In forestry, portfolio
 theory has been used to select the optimal weighting of seed sources for
 regenerating forests under a variety of climate change scenarios [@crowe2008].
 I focus on this last issue for Chapter 3, where I use portfolio theory to
-assess the risk-return trade-off for salmon metapopulation productivity and
+assess the risk--return trade-off for salmon metapopulation productivity and
 persistence given choices about what habitat to conserve under climate change
-and stream-flow reduction scenarios. I show that TODO and see this as a
-promising but largely unexplored use of portfolio theory in ecology.
+and stream-flow reduction scenarios. 
 
 # Extreme risk
 
@@ -214,34 +213,33 @@ stock market crash of 2008, but we know that events this extreme are not only
 possible, they have happened with surprising frequency in the last 100 years
 REF?.
 
-@taleb2007 writes about the concept of heavy-tailed events in detail. He uses
-the term 'black swan' to refer to surprising and improbable events that have
-major consequences and are typically rationalized in retrospect. The discovery
-of a single black swan is sufficient to disprove the hypothesis that all swans
-are white. Many of the major events that have shaped recent human history could
-be considered black swan. For example, with hindsight, World War II was a black
-swan. TODO The great depression could be considered a black swan. In recent
-years, the fields of finance and sociology have moved towards systematically
-measuring these heavy-tailed events [@sornette2009; @janczura2012;
-@johnson2013b].
+@taleb2007 wrote about the concept of heavy-tailed events in detail. He coined
+the term 'black swan' to refer to rare events with large impact that are
+typically rationalized in retrospect. For ornithologists, the discovery of a
+single black-coloured swan was sufficient to disprove the hypothesis that all
+swans are white. Many of the major events that have shaped human history could
+be considered black swans. For example, with hindsight, World War I and II, the
+great depression, and the spread of the Internet could be considered black swan
+events [@taleb2007]. In recent years, the fields of finance and sociology have
+moved towards systematically measuring these heavy-tailed events [e.g.
+@sornette2009; @janczura2012; @johnson2013b].
 
 <!--bar-yaslam guy - complexity institute-->
 
-Ecology has likewise seen a move towards focusing on risk and extremeness
-[@jentsch2007; @thompson2013, Fig. \ref{fig:wos}]. Recent work in ecology has
-noted the frequency and influence of population dynamic catastrophes
-[@gerber2001; @ward2007], ecological surprises [@lindenmayer2010; @doak2008],
-counterintuitive responses of populations to management [@pine-iii2009], and
-even explored how the specific concept of black swans could apply to ecology
-and evolution [@nunez2012]. Discussion of the importance of catastrophic events
-has a long history in the ecological literature. As early as 1898, @bumpus1899
-observed that a severe winter storm off Providence, Rhode Island killed a
-disproportionate number of very small and large sparrows (and this thesis
-uncovers a number of other catastrophic events from the 1800s). In the 1990s,
-both @sugihara1990 (under the concept TODO CHANGE of fractals) and @mangel1994
-(under the concept of catastrophes) highlighted extreme events as perhaps the
-most important force behind how long species persist in nature.
-
+Ecology has likewise seen a move towards focusing on risk and extremeness [e.g.
+@gerber2001; @jentsch2007; @thompson2013, Fig. \ref{fig:wos}]. Recent work in
+ecology has noted the frequency and influence of population dynamic
+catastrophes [@gerber2001; @ward2007], ecological surprises [@lindenmayer2010;
+@doak2008], counterintuitive responses of populations to management
+[@pine-iii2009], and even explored how the specific concept of black swans
+could apply to ecology and evolution [@nunez2012]. Discussion of the importance
+of catastrophic events has a long history in the ecological literature. As
+early as 1898, @bumpus1899 observed that a severe winter storm off Providence,
+Rhode Island killed a disproportionate number of very small and large sparrows
+(and this thesis uncovers a number of other catastrophic events from the
+1800s). In the 1990s, both @sugihara1990 (using fractals) and @mangel1994
+(using population catastrophes) highlighted extreme events as perhaps the most
+important force behind how long species persist in nature.
 
 \begin{figure}[htbp]
 \centering
@@ -274,10 +272,10 @@ and unrelated to life-history characteristics. Importantly, the black swan
 events are almost always downwards events, which given previous work on the
 importance of catastrophes to population persistence times, has important
 implications for estimates of extinction risk that typically rely on
-normal-tailed population dynamics. TODO WRAP UP SENTENCE PARAPHRASE THIS:
-Together, my thesis further develops the expanding field of ecological
-portfolios and in doing so contributes to our understanding of variance
-(chapter 2), covariance (chapter..., and extreme events in ecological systems.
+normal-tailed population dynamics. Together, my thesis expands our
+understanding ecological portfolios and in doing so contributes to our
+understanding of variance and covariance (Chapter 2), managing for variance and
+covariance (Chapter 3), and extreme events (Chapter 4) in ecological systems.
 
 <!--Risk assessment is a critical component to biological conservation and
     management [@burgman2005]. Conservation biology has typically used metrics
