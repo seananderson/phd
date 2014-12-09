@@ -19,7 +19,14 @@
 #
 # TS=the AND SU=("Biodiversity & Conservation" OR "Environmental Sciences & Ecology" OR "Marine & Freshwater Biology")
 # TI=(synchrony OR asynchrony OR covariance OR synchronous OR asynchronous) AND SU=("Biodiversity & Conservation" OR "Environmental Sciences & Ecology" OR "Marine & Freshwater Biology")
+#
 # (TI=(synchrony OR asynchrony OR covariance OR synchronous OR asynchronous OR synchronization OR synchronize) AND SU=("Biodiversity & Conservation" OR "Environmental Sciences & Ecology" OR "Marine & Freshwater Biology")
+
+
+# TI=risk AND SU=("Biodiversity & Conservation" OR "Environmental Sciences & Ecology" OR "Marine & Freshwater Biology")
+# TI=(variance OR variability) AND SU=("Biodiversity & Conservation" OR "Environmental Sciences & Ecology" OR "Marine & Freshwater Biology")
+
+
 
 
 f <- list.files(pattern = "*.txt")
