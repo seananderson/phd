@@ -208,10 +208,10 @@ than the normal distribution [@rachev2008]. First, there is ample evidence that
 financial returns are heavy tailed. Second, the consequences to portfolio
 optimization of assuming normal-tailed returns when they are heavy tailed can
 have dramatic consequences for risk forecasts and hence portfolio investment
-decisions (REF). For example, normal tailed returns would not allow for the
-stock market crash of 2008, but we know that events this extreme are not only
-possible, they have happened with surprising frequency in the last 100 years
-REF?.
+decisions [@rachev2008]. For example, normal tailed returns would not allow for
+the stock market crash of 2008, but we know that events this extreme are not
+only possible, they have happened with surprising frequency in the last 100
+years [@sornette2009].
 
 @taleb2007 wrote about the concept of heavy-tailed events in detail. He coined
 the term 'black swan' to refer to rare events with large impact that are
@@ -223,8 +223,6 @@ great depression, and the spread of the Internet could be considered black swan
 events [@taleb2007]. In recent years, the fields of finance and sociology have
 moved towards systematically measuring these heavy-tailed events [e.g.
 @sornette2009; @janczura2012; @johnson2013b].
-
-<!--bar-yaslam guy - complexity institute-->
 
 Ecology has likewise seen a move towards focusing on risk and extremeness [e.g.
 @gerber2001; @jentsch2007; @thompson2013, Fig. \ref{fig:wos}]. Recent work in
@@ -277,65 +275,23 @@ understanding ecological portfolios and in doing so contributes to our
 understanding of variance and covariance (Chapter 2), managing for variance and
 covariance (Chapter 3), and extreme events (Chapter 4) in ecological systems.
 
-<!--Risk assessment is a critical component to biological conservation and
-    management [@burgman2005]. Conservation biology has typically used metrics
-    of symmetric variability such as the standard deviation or the coefficient
-    of variation of a time series [e.g. @greene2010] and sometimes loosely
-    referred to the result as risk; but, risk specifically refers to both the
-    probability of an undesired event happening and the magnitude of loss
-    associated with that event [@morgan1990, Fig. \ref{fig:risk}]. For example,
-    if a precise outcome is unknown but can only end positively, it presents
-    little risk. Therefore, ecological risk metrics should allow for an
-    asymmetry in this loss function [@reckhow1994]. -->
+# Contributions
 
-
-<!--Therefore, like financial risk metrics, we should consider heavier-tailed
-    probability distributions than standard distributions such as the normal
-    [@hummel2009]. The financial literature is rich with methods to rapidly
-    assess the risk properties of time series---methods that are particularly
-    useful when used as part of portfolio optimization [@rachev2008].-->
-
-<!--Recent financial literature has focused on downside risk metrics
-    [@ang2006], which emphasize the probability of an undesired event; we see
-    great opportunity for their application in conservation biology
-    (Fig. \ref{fig:risk}). A variety of downside risk metrics measure different
-    properties of risk. Therefore, how do different metrics reflect the goals
-    of different "investors" in ecological portfolios? Conservation
-    organizations, for example, may be concerned with avoiding catastrophic
-    single years that could influence future productivity or have downstream
-    effects on predators or prey. They might use the probability of ruin, which
-    measures the probability of an event worse than some threshold occurring
-    [@vasicek1987] or the conditional value-at-risk (CVaR) to characterize the
-    average magnitude of an extremely bad event [@rockafellar2002; @sethi2012a;
-    @sethi2012b]. Resource users, on the other hand, might wish to minimize
-    year-to-year fluctuations to ensure a stable income. Their interests could
-    be reflected in the semideviation or semivariance, which characterizes the
-    typical "badness" or severity of an event [@markowitz1959; @sethi2012a;
-    @sethi2012b]. Moving forward, a fruitful area of research may be matching
-    risk metrics to specific conservation-management goals [@sethi2012a].-->
-
-<!--And exploring aspects of risk is a natural extension to considering variance-->
-<!--and covariance.-->
-
-<!--The use of "downside risk metrics" have become common place in the financial literature [e.g. @nawrocki1999; @ang2006] and recent work in ecology and fisheries has suggested their relevance [e.g. @sethi2010b; @sethi2012a].-->
-
-<!--A variety of parallel fields in ecology have likewise concerned themselves with-->
-<!--downside risk events, for example-->
-
-<!--Of particular importance in finance (REF) and ecology (REF) is the probability-->
-<!--of extremely bad events occurring. Even if exceptionally rare, extremely bad-->
-<!--events can have disproportionate consequences. For example, XX example in the-->
-<!--world. In ecology, population catastrophes are perhaps the single most-->
-<!--important contributor to extinction risk and population persistence time-->
-<!--[@mangel1994].-->
-
-<!--The concepts of variance, synchrony, and risk have grown in prominence in the-->
-<!--ecological literature in the last three decades (Fig. \ref{fig:wos}). The focus-->
-<!--on risk, and in particular catastrophes and extremes (a specific form of risk),-->
-<!--has grown the most rapidly in recent decades (Fig. \ref{fig:wos}b), with "risk"-->
-<!--surpassing variability-related terms in prominence in the 1980s (Fig.-->
- <!--\ref{fig:wos}a). -->
-
+This introduction and Chapter 5 (General discussion) are written in the
+first-person singular. Chapters 2--4 are written in the first-person plural
+since they are derived from published manuscripts (Chapter 2 and 3) or from
+a manuscript that was written for submission to a journal (Chapter 4) with
+co-authors (noted at the start of each chapter). Portions of Chapter 1 and
+5 are derived from a draft manuscript co-authored with Nick Dulvy and Andrew
+Cooper. These chapters have also benefited from previous discussions with Jon
+Moore and Trevor Branch. For Chapters 2, 3, and 4, I wrote the code, analyzed
+the data, and wrote the first drafts of the text. The idea for Chapter 2 grew
+out of discussions between Nick Dulvy, Andrew Cooper, and myself. Jon Moore and
+Michelle McClure contributed their ideas for an unfinished manuscript which
+I merged with my own ideas to carry out Chapter 3. Trevor Branch first
+suggested I consider ecological black swans, the topic of Chapter 4. Chapters
+2, 3, and 4 benefited from discussions, editing, and comments from the
+co-authors listed at the beginning of each chapter.
 
 <!--\renewcommand{\baselinestretch}{\tighttextstretch}-->
 <!--\normalsize-->
