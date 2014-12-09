@@ -1,25 +1,28 @@
 \chapter{General discussion}
 
+<!--cite my WOS fig in last paragraph?-->
+
 The study of diversity and stability in population ecology has a long history
 [@macarthur1955; @may1973; @mccann2000; @loreau2010a]; linking financial
-concepts with ecology presents new ways to approach some of the issues in the
+concepts with ecology presents new ways to approach some of the issues in this
 field [@figge2004]. My second chapter links theoretical development of the
 ecological portfolio effect with empirical data and derives practical
 recommendations for measuring portfolio effects. My third chapter explores how
 we can apply portfolio optimization concepts to inform decisions about
 conservation prioritization. My fourth chapter rigorously assesses the evidence
 for extreme events in population ecology. Together, my thesis further develops
-the expanding field of ecological portfolios and in doing so contributes to
-our understanding of variance, covariance, and extreme events in ecological
-systems. In this general discussion, I summarize theoretical and
-methodological advances of my thesis. I conclude by considering future
-challenges and questions for the field to address.
+the expanding field of ecological portfolios and in doing so contributes to our
+understanding of variance, covariance, and extreme events in ecological
+systems. In this general discussion, I summarize theoretical and methodological
+advances of my thesis. I conclude by considering future applied ecology and
+conservation challenges and questions for the field to address.
 
-My thesis makes a number of theoretical and methodological contributions to the
+Narrowing down to consider only the theoretical and methodological
+contributions of my thesis, my thesis makes a number of contributions to the
 study of variance and extremeness in ecology. I extend a classic feature of
 ecology---Taylor's power law---into an empirical tool. We can use this approach
 to ask questions about the stability of metapopulation (and possibly community)
-dynamics while accounting for mean-variance scaling relationships and uneven
+dynamics while accounting for mean--variance scaling relationships and uneven
 population sizes. The approach has since been used by @mellin2014 to show that
 mean--variance portfolio effects increase with spatial dissimilarity in reef
 fish community structure and by @siple2014 to show that spawning subpopulation
@@ -33,21 +36,21 @@ illustrates and tests a heavy-tailed phenomenological population dynamics model
 that can easily by applied to commonly available abundance time series.
 
 My thesis also makes a number of software contributions. R packages and
-associated vignettes accompany my second and third chapters. The `ecofolio` R
-package has already been used by the above mentioned @mellin2014 and
-@siple2014. The `metafolio` R package is available on CRAN (Comprehensive R
-Archive Network), is flexible in the ecological system it can represent, and,
+associated vignettes accompany my second and third chapters. The `ecofolio`
+R package has already been used by the above-mentioned @mellin2014 and
+@siple2014. The `metafolio` R package is available on CRAN (Comprehensive
+R Archive Network), is flexible in the ecological system it can represent, and,
 being written in C++, can be used to rapidly explore efficient frontiers of
 conservation prioritization through Monte Carlo simulation. My fourth chapter
 is one of the first examples, to my knowledge, of the application of the
 Bayesian statistical software Stan to an ecological problem
 (<http://mc-stan.org/citations.html>). Estimating the degrees of freedom
 parameter in a t distribution is a challenging exercise [@gelman2014],
-particularly when fit as a state space model; Stan allowed us to efficiently
-sample from these probability models. The source code for the `ecofolio` R
-package is available at <https://github.com/seananderson/ecofolio> and the code
-to recreate all the analyses in my third and fourth chapters is available at
-<https://github.com/seananderson/metafolio> and
+particularly when fit as a state space model; Stan allowed for efficient
+sampling from these probability models. The source code for the `ecofolio`
+R package is available at <https://github.com/seananderson/ecofolio> and the
+code to recreate all the analyses in my third and fourth chapters is available
+at <https://github.com/seananderson/metafolio> and
 <https://github.com/seananderson/heavy-tails>.
 
 # Challenges
@@ -66,8 +69,8 @@ multidimensional objectives. For instance, whereas the roots of decision
 analysis---a formal method for evaluating complex decision problems---deal with
 decision making for one-dimensional objectives, decision analysis is commonly
 extended to multiple objectives [e.g. @keeney1976; @kiker2005; @sethi2010b].
-Separate objectives can be maintained allowing decision makers to explicitly
-see trade-offs or objectives can be condensed into a single dimension through
+Separate objectives can be maintained, allowing decision makers to explicitly
+see trade-offs, or objectives can be condensed into a single dimension through
 multiattribute utility theory, among other approaches [@keeney1976]. A similar
 approach may be applicable to ecological portfolio optimization.
 
@@ -100,14 +103,15 @@ apply portfolio concepts to will continue to accrue. My thesis has benefited
 from a number of large datasets, many of which were not available a decade ago.
 Likewise, statistical tools for propagating uncertainty and fitting complex
 spatio-temporal models are improving rapidly, e.g., TMB: @kristensen2014,
-R-INLA: @rue2014, Stan: @stan-manual2014. For these reasons, the application of
-quantitative portfolio concepts to ecology is likely to expand.
+R-INLA: @rue2014, Stan: @stan-manual2014. For these reasons, among others, the
+application of quantitative portfolio concepts to ecology is likely to expand.
 
 # Outlook
 
-The application of portfolio concepts to ecological systems is still a young
-discipline and there exist many important future questions to address. I
-outline three examples below.
+How can we move ecological portfolios beyond an academic exercise to using
+their principles in applied management? The application of portfolio concepts
+to ecological systems is still a young discipline and there exist many
+important future questions to address. I outline three below.
 
 First, how can the portfolio effect and portfolio optimization inform
 management and conservation and in what other contexts can it be applied? For
@@ -124,26 +128,24 @@ society's preference for a particular position on an efficient frontier may
 shift for endangered species management compared to managing populations at a
 healthy abundance.
 
-Second, how can we move ecological portfolios beyond an academic exercise to
-using their principles in applied management? Recent work has shown clear
-theoretical advantages to ecological conservation that applies portfolio theory
-[@crowe2008; @halpern2011; @ando2012; @anderson2014], although, to my
-knowledge, portfolio theory has yet to be formally integrated into real-word
-conservation planning. On the other hand, the general lessons of portfolio
-theory are already used in many cases of resource management. For example,
-managers can allow resource users to integrate across space and species
-[@kasperski2013], resource users can choose to pool profits [@sethi2012], and
-managers can maintain a diversity of life-history characteristics and local
-adaptations [@hilborn2003]. The general principles of maintaining
-representation, resilience, and redundancy can be integrated into conservation
-decision making without any formal quantitative application of portfolio theory
-[@haak2012].
+Second, recent work has shown clear theoretical advantages to ecological
+conservation that applies portfolio theory [@crowe2008; @halpern2011;
+@ando2012; @anderson2014], although, to my knowledge, portfolio theory has yet
+to be formally integrated into real-word conservation planning. On the other
+hand, the general lessons of portfolio theory are already used in many cases of
+resource management. For example, managers can allow resource users to
+integrate across space and species [@kasperski2013], resource users can choose
+to pool profits [@sethi2012], and managers can make decisions that maintain
+a diversity of life-history characteristics and local adaptations
+[@hilborn2003]. The general principles of maintaining representation,
+resilience, and redundancy can be integrated into conservation decision making
+without any formal quantitative application of portfolio theory [@haak2012].
 
 Third, will shifting climate isotherms [@burrows2011; @pinsky2013] combined
 with increases in the frequency and magnitude of climate extremes
 [@easterling2000; @ipcc2012] translate to a greater probability of population
 dynamic black swans [@jentsch2007; @thompson2013]? Can we develop predictive
-models of population catastrophes in space and time. And what conservation
+models of population catastrophes in space and time? And what conservation
 approaches make some populations more robust to extremes and some populations
 more likely to recover from them? Addressing these types of questions may be
 vital to effective ecological management in the coming decades.
@@ -157,14 +159,14 @@ towards effective ecological decision making. However, decision makers
 ultimately tend to care about risk---probability combined with magnitude of
 loss---and therefore extremeness. My fourth chapter deals with the reality of
 extreme events in population ecology whereas the previous two chapters explore
-mechanisms and approaches that can cope with those. Ultimately, diverse natural
+mechanisms and approaches that can cope with these. Ultimately, diverse natural
 portfolios of populations, species, and habitats are a critical component to
 maintaining stability and buffering against ecological catastrophes and
 resource-use collapses in an increasingly stressful world.
 
-\renewcommand{\baselinestretch}{\tighttextstretch}
-\normalsize
-\bibliographystyle{apalike}
-\bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}
-\renewcommand{\baselinestretch}{\textstretch}
-\normalsize
+<!--\renewcommand{\baselinestretch}{\tighttextstretch}-->
+<!--\normalsize-->
+<!--\bibliographystyle{apalike}-->
+<!--\bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}-->
+<!--\renewcommand{\baselinestretch}{\textstretch}-->
+<!--\normalsize-->
