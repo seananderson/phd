@@ -1,15 +1,9 @@
+
 \prefacesection{Abstract}
 
+\vspace{-5mm}
+
 <!--350 words-->
-
-<!--variance-->
-
-<!--Ecological risk is a function of is the combination of -->
-<!--Variance is a typical measure of uncertainty in ecology...-->
-<!--A typical measure of uncertainty in ecology is variance...-->
-<!--Risk is a function of something something...-->
-<!--Uncertainty as measured by variance is a form of risk, one promising approach-->
-<!--of of managing risk in ecology is borrowing concepts-->
 
 Assessing, managing, and communicating variance and risk is fundamental to
 effective ecological decision making. One promising approach is to borrow
@@ -44,8 +38,10 @@ contribute to portfolio effects, such as thermal-tolerance diversity and
 habitat heterogeneity, and developing conservation strategies that are robust
 to unexpected extreme events.
 
-\bigskip
-\noindent
-\textbf{Keywords}: biocomplexity; catastrophes; diversity--stability; modern
-portfolio theory; response diversity; synchrony
+\smallskip
 
+<!--\noindent \textbf{Keywords}: biocomplexity; catastrophes; diversity--stability;-->
+<!--modern portfolio theory; response diversity; synchrony-->
+
+<!--\renewcommand{\baselinestretch}{\textstretch} %% get normal spacing-->
+<!--\normalsize-->
