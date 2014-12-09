@@ -1,4 +1,4 @@
-all: ack.tex abstract.tex introduction.tex discussion.tex anderson-phd.bib pdf dropbox
+all: ack.tex abstract.tex introduction.tex discussion.tex pdf dropbox
 
 pdf:
 	latexmk anderson-phd
