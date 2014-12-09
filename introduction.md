@@ -337,10 +337,12 @@ covariance (Chapter 3), and extreme events (Chapter 4) in ecological systems.
  <!--\ref{fig:wos}a). -->
 
 
-\renewcommand{\baselinestretch}{\tighttextstretch}
-\normalsize
-\bibliographystyle{apalike}
-\bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}
-\clearpage
-\renewcommand{\baselinestretch}{\textstretch}
-\normalsize
+<!--\renewcommand{\baselinestretch}{\tighttextstretch}-->
+<!--\normalsize-->
+<!--\bibliographystyle{apalike}-->
+<!--\addcontentsline{toc}{section}{Bibliography}-->
+<!--\typeout{Bibliography}-->
+<!--\bibliography{/Users/seananderson/Dropbox/tex/jshort,/Users/seananderson/Dropbox/tex/ref3}-->
+
+<!--\renewcommand{\baselinestretch}{\textstretch}-->
+<!--\normalsize-->
