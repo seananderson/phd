@@ -1,4 +1,3 @@
-
 \prefacesection{Abstract}
 
 \vspace{-5mm}
