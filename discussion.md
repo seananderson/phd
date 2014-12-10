@@ -111,7 +111,8 @@ application of quantitative portfolio concepts to ecology is likely to expand.
 How can we move ecological portfolios beyond an academic exercise to using
 their principles in applied management? The application of portfolio concepts
 to ecological systems is still a young discipline and there exist many
-important future questions to address. I outline three of these questions below.
+important future questions to address. I outline three groups of these
+questions below.
 
 First, how can the portfolio effect and portfolio optimization inform
 management and conservation and in what other contexts can it be applied? For

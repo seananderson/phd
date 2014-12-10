@@ -160,8 +160,8 @@ The probability density for t distributions with a scale parameter of 1 and
 different values of $\nu$. Small values of $\nu$ create heavy tails. As $\nu$
 approaches infinity the distribution approaches the normal distribution. For
 example, at $\nu = 2$, the probability of drawing a value more than five
-standard deviations below the mean is 1.8\%, whereas the probability of drawing
-such a value from a normal distribution is nearly zero ($2.9\cdot10^{-5}$\%).
+standard deviations below the mean is $0.02$, whereas the probability of drawing
+such a value from a normal distribution is nearly zero ($2.9\cdot10^{-7}$).
 (c--e) Simulated population dynamics from a Gompertz model with process noise
 drawn from t distributions with three different values of $\nu$. Coloured dots
 in panels c and d represent jumps with less than a 1 in 1000 chance of
@@ -213,7 +213,7 @@ deviations on a log scale). Finally, the Gompertz model assumes that
 population growth rate declines linearly with log abundance. Therefore, we
 also fit an alternative model, the Ricker-logistic model, which assumes that
 population growth rate declines linearly with abundance itself (Supporting
-Information).
+materials).
 
 In addition to alternative population models, we investigated the sensitivity
 of our results to weaker and stronger priors (exponential rate parameter $=
@@ -259,7 +259,7 @@ for birds (\birdPH\%) followed by mammals (\mammalsPH\%), and insects
 swans were taxonomically widespread, occurring in \POrdersHeavy\% of taxonomic
 orders. Accounting for time series length and partially pooling inference
 across taxonomic class and order with a multilevel model (Supporting
-Information), there was stronger evidence for black swans in insect
+materials), there was stronger evidence for black swans in insect
 populations than is visually apparent in Fig.~\ref{fig:nu-coefs}---four of 10
 orders with the highest median probability of heavy tails were insect
 orders---however, there was considerable uncertainty in these estimates
@@ -327,16 +327,16 @@ events---especially given the length of the time series in the GPDD
 (Supporting materials Figs~\ref{fig:sim-nu}, \ref{fig:sim-prob}).
 
 Across populations, the probability of observing black-swan dynamics was
-positively related to time-series length and negatively related to magnitude of
-process noise ($\sigma$) but not clearly related to population growth rate
+positively related to time-series length and negatively related to magnitude
+of process noise ($\sigma$) but not clearly related to population growth rate
 ($\lambda$), density dependence ($b$), or maximum lifespan
-(Figs~\ref{fig:correlates}, \ref{fig:posteriors}b). Longer time-series length
-was the strongest covariate of observing black-swan dynamics. For instance, we
-were about \pIncHeavyNThirtyNSixty~times as likely to observe heavy tails in a
-population with 60 time steps compared to one with 30 time steps. However, the
-absolute change in probability with increased time series length was small
-($\pHeavyNSixty$ vs.\ $\pHeavyNThirty$ in the previous example,
-Fig.~\ref{fig:correlates}).
+(Figs~\ref{fig:posteriors}b, \ref{fig:correlates}). Longer time-series length
+was the strongest covariate of observing black-swan dynamics. For instance,
+the expected probability density below $\nu = 10$ was about \pIncHeavyNThirtyNSixty~times
+greater for a population with 60 time steps compared
+to one with 30 time steps. However, the absolute change in probability with
+increased time series length was small ($\pHeavyNSixty$ vs.\ $\pHeavyNThirty$
+in the previous example, Fig.~\ref{fig:correlates}).
 
 \begin{figure}[htbp]
 \begin{center}
@@ -384,7 +384,7 @@ shag cormorants (\textit{Phalacrocorax aristotelis}) on the Farne Islands,
 United Kingdom, declined suddenly following a red tide event in 1968
 \citep{potts1980}. This freed quality nest sites for first-time breeders,
 productivity rapidly increased, and the population experienced a rapid upswing
-in abundance. \citep{potts1980}.
+in abundance \citep{potts1980}.
 
 
 \section{Discussion}
@@ -457,7 +457,7 @@ conversely, some extreme observations may have been discarded or altered if
 they were erroneously suspected of being recording mistakes. Indeed, we
 discarded three of the populations that our method initially identified as
 heavy tailed because they turned out to be data-entry errors (Supporting
-Information). A final caveat is that the temporal scales of observation and
+materials). A final caveat is that the temporal scales of observation and
 population dynamics vary considerably across populations in the GPDD and this
 likely influences the detection of heavy tails. As an example, if we make
 frequent observations relative to generation time (e.g.~for many large-bodied
@@ -506,7 +506,7 @@ ecology has moved toward focussing on aspects of variance in addition to mean
 responses \citep[e.g.][]{loreau2010a, thompson2013}. Our results suggest that
 an added focus on ecological extremes represents the next frontier,
 particularly in the face of increased climate extremes \citep{meehl2004,
-  thompson2013, ipcc2012}. Financial analysts are concerned with the shape of
+  ipcc2012, thompson2013}. Financial analysts are concerned with the shape of
 the downward tails of financial returns because these directly impact
 estimates of risk---the probability of a specific magnitude of undesired event
 occurring \citep{rachev2008}. A comparable focus in ecology would increase our
@@ -515,15 +515,15 @@ by downward black-swan events.
 
 \section{Acknowledgements}
 
-We thank J.D. Yeakel and other members of the Earth to Ocean research
-group for helpful discussions and comments. We are grateful to the
+We thank J.W. Moore, J.D. Yeakel, and other members of the Earth to Ocean
+research group for helpful discussions and comments. We are grateful to the
 contributors and maintainers of the Global Population Dynamics Database and to
 Compute Canada's WestGrid high-performance computing resources. Silhouette
 images were obtained from \texttt{phylopic.org} under Creative Commons
-licenses; sources are listed in the Supporting materials. Funding was
-provided by a Simon Fraser University Graduate Fellowship (SCA), the Natural
-Sciences and Engineering Research Council of Canada (NKD, ABC), the Canada
-Research Chairs Program (NKD).
+licenses; sources are listed in the Supporting materials. Funding was provided
+by a Simon Fraser University Graduate Fellowship (SCA), the Natural Sciences
+and Engineering Research Council of Canada (NKD, ABC), the Canada Research
+Chairs Program (NKD).
 
 % \section{Supporting Information}
 %

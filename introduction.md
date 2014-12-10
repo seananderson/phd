@@ -289,7 +289,7 @@ co-authored with Nick Dulvy and Andy Cooper. This draft manuscript has also
 benefited from previous discussions with Jon Moore and Trevor Branch. For
 Chapters 2, 3, and 4, I wrote the code, analyzed the data, and wrote the first
 drafts of the text. The idea for Chapter 2 grew out of discussions between Nick
-Dulvy, Andrew Cooper, and myself. Jon Moore and Michelle McClure contributed
+Dulvy, Andy Cooper, and myself. Jon Moore and Michelle McClure contributed
 their ideas for a manuscript, which I merged with my own ideas to carry out
 Chapter 3. Trevor Branch first suggested I consider ecological black swans, the
 topic of Chapter 4. Chapters 2, 3, and 4 benefited from discussions, editing,

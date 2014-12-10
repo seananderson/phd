@@ -35,12 +35,12 @@ for continuing to do so. Thanks to my co-developers of ss3sim for exploring the
 depths of stock assessment with me.
 
 Finally, I'm deeply thankful to my family for supporting me through all these
-years of education. To Gran, you've instilled in me the value of education and
-shown a keen interest in my work. To my parents, you've always given me the
+years of education. To Gran, you have instilled in me the value of education
+and shown a keen interest in my work. To my parents, you've always given me the
 freedom and encouragement to work on whatever interests me. Mom and Dad, look
 how far I've come since you taught me how to write my first research paper and
-the joys of Reverse Polish notation calculators 25 years ago! And to Sacha,
-thank you for your unwavering support---you've made the years I've spent
+the joys of Reverse Polish Notation calculators 25 years ago! And to Sacha,
+thank you for your unwavering support---you have made the years I've spent
 working on this thesis immeasurably better.
 
 \renewcommand{\baselinestretch}{\textstretch} %% get normal spacing
