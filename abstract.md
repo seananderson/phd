@@ -1,6 +1,6 @@
 \prefacesection{Abstract}
 
-\vspace{-5mm}
+\vspace{-7mm}
 
 <!--350 words-->
 
