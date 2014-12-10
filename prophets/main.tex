@@ -150,7 +150,7 @@ elements of our analysis are applicable to community portfolio effects, the
 analysis of PEs in communities is complicated by trophic interactions, changes
 in mean abundance with increasing diversity (the over-yielding effect), and
 differing mean-variance scaling relationships across species
-\citep[e.g.][]{loreau2010, thibaut2013}.
+\citep[e.g.][]{loreau2010a, thibaut2013}.
 
 When discussing the properties of metapopulation portfolios we use
 three terms (stability, diversity, and homogeneous population), which we define
@@ -211,12 +211,12 @@ portfolio variance $\sigma^2_p$ as
 \begin{equation}
  %\sigma^2_p = \sum_{i =1}^n \sigma^2_i + \sum_{i =1}^n \sum_{\substack{j =1 \\
   %j \neq i}}^n \rho \sqrt{\sigma^2_i \sigma^2_j}.
- \sigma^2_p = \sum_{i =1}^n \sigma^2_i + \sum_{i =1}^n \cdot \sum_{j =1}^n \rho \sqrt{\sigma^2_i \sigma^2_j}. (4)
+ \sigma^2_p = \sum_{i =1}^n \sigma^2_i + \sum_{i =1}^n \cdot \sum_{j =1}^n \rho \sqrt{\sigma^2_i \sigma^2_j}.
 \end{equation}
 
 We explored the implications of the two PE definitions across four statistical
 properties that are ecologically meaningful and have precedence in the PE
-literature \citep{tilman1999, cottingham2001, loreau2010,
+literature \citep{tilman1999, cottingham2001, loreau2010a,
 thibaut2013}: the correlation between subpopulations, the temporal
 mean-variance scaling relationship (z), the number of subpopulations, and the
 evenness of subpopulation mean abundance. The expected effect of these
@@ -234,7 +234,7 @@ reasons why the differences arise.
 
 To test the real-world strength of the average-CV and mean-variance PEs, we
 collected metapopulation time-series data for salmon, moths, and reef fishes
-(Table~\ref{tab:datasources}; Figs~\ref{fig:ts},~\ref{fig:map}).
+(Supporting materials Table~\ref{tab:datasources}; Figs~\ref{fig:ts},~\ref{fig:map}).
 We obtained salmon returns from the primary
 literature, in particular \citet{dorner2008}, and government research
 documents (Table~\ref{tab:datasources}). We obtained moth abundance trends from
@@ -271,7 +271,7 @@ To calculate the empirical mean-variance PE\index{mean-variance PE}, we estimate
 linear regression of the subpopulations' ($i$) interannual log($\sigma^2$) and
 log($\mu$),
 \begin{equation}
-  \log(\sigma^2_i) = \beta_0 + z \cdot \log(\mu_i) + \epsilon_i (5)
+  \log(\sigma^2_i) = \beta_0 + z \cdot \log(\mu_i) + \epsilon_i
   \label{eq:linear-taylor}
 \end{equation}
 
@@ -306,16 +306,16 @@ and variance values. In some cases, a quadratic fit may be more appropriate
 
 \begin{equation}
   \log(\sigma^2_i) = \beta_0 + \beta_1 \log(\mu_i) + \beta_2 \log(\mu_i)^2 +
-  \epsilon_i, \quad \beta_2 \ge 0. (6)
+  \epsilon_i, \quad \beta_2 \ge 0
   \label{eq:quad-taylor}
 \end{equation}
 
 \noindent
-\citet{perry1992} suggest limiting the lower value of $\beta_2$ to 0 since
+\citet{perry1992} suggest limiting the lower value of $\beta_2$ to $0$ since
 a negative $\beta_2$ would imply that at some value of $\mu$ the $\sigma^2$
 would decrease with increasing $\mu$ and eventually become negative. We used
-the R package \texttt{nls} \citep{r2013} with the \texttt{port} algorithm
-to fit the quadratic model and bound the lower value of $\beta_2$ to 0. If
+the R package nls \citep{r2013} with the \texttt{port} algorithm
+to fit the quadratic model and bound the lower value of $\beta_2$ to $0$. If
 $\beta_2 = 0$ the quadratic model simplifies to the linear model.
 
 \textit{Model averaging}: Whereas the quadratic version of Taylor's power law
@@ -325,7 +325,7 @@ potentially poorer predictive capacity. We also examined predictions averaged
 across the linear and quadratic models with the predictions weighted by the
 Akaike weights of their respective models \citep{burnham2002}. We fit an
 AICc-model-averaged version of the linear and quadratic Taylor's power law fits
-using the R package \texttt{MuMIn} \citep{barton2012}.
+using the R package MuMIn \citep{barton2012}.
 
 \subsection{Accounting for non-stationary time-series}
 
@@ -342,9 +342,9 @@ A more thorough analysis of PEs for non-stationary time series might
 consider the distribution of means, variances, and CVs within each
 subpopulation, but was beyond the scope of our analysis.
 
-\subsection{The \texttt{ecofolio} R package}
+\subsection{The ecofolio R package}
 
-We provide an R package \texttt{ecofolio} to estimate the PEs described in this
+We provide an R package ecofolio to estimate the PEs described in this
 paper (see the Supporting Information). In addition to the average-CV and
 mean-variance PEs, our package includes options to fit quadratic mean-variance
 scaling models, average across mean-variance model predictions, and detrend
@@ -376,12 +376,12 @@ taxa. Whereas z was not significantly different from two for
 17/20 of the salmon metapopulations,
 there was infrequent overlap between the 95\% CI and two for the moth
 metapopulations (3/20), and no overlap for
-reef fish metapopulations (Figs~\ref{fig:Taylor-fits}, \ref{fig:z-vals}). The
+reef fish metapopulations (Supporting materials Figs~\ref{fig:Taylor-fits}, \ref{fig:z-vals}). The
 inter-subpopulation mean-variance relationship was a reasonably unbiased proxy
 for the intra-subpopulation mean-variance relationship. The slope of a
 regression of median intra- and inter-subpopulation z was 1.04 (95\% CI:
 0.51--1.57) although there was a high degree of scatter ($R^2 = 0.25$;
-Fig.~\ref{fig:inter-vs-intra-z}).
+Supporting materials Fig.~\ref{fig:inter-vs-intra-z}).
 
 In our empirical meta-analysis, the PEs varied strongly between, but also
 within, taxonomic groups due to the mean-variance scaling
@@ -411,20 +411,20 @@ relationship for some moth and reef fish metapopulations (Fig.~\ref{fig:meta}c,
 d).
 
 The mean-variance PE was highly sensitive to the estimation method
-(Fig.~\ref{fig:detrend}). In particular,
+(Supporting materials Fig.~\ref{fig:detrend}). In particular,
 13/18 reef fish metapopulations
 switched from destabilizing to stabilizing PEs with quadratic
-(Fig.~\ref{fig:meta-quad}) or quadratic-linear averaged
-(Fig.~\ref{fig:meta-lin-quad-avg}) models. The AICc of the quadratic models was
+(Supporting materials Fig.~\ref{fig:meta-quad}) or quadratic-linear averaged
+(Supporting materials Fig.~\ref{fig:meta-lin-quad-avg}) models. The AICc of the quadratic models was
 lower in 11/51 metapopulations and at least two
 units lower in 8/51, indicating
 increased support despite the added model complexity. Linear
 detrending generally created a similar mean-variance PE pattern to the original
-mean-variance PEs (Figs~\ref{fig:detrend}, \ref{fig:meta-detrend}). Loess
+mean-variance PEs (Supporting materials Figs~\ref{fig:detrend}, \ref{fig:meta-detrend}). Loess
 detrending increased the mean-variance PE in
 34/51 cases and the average-CV PE
 in 34/51, lowering it in the
-others (Figs~\ref{fig:detrend}, \ref{fig:meta-detrend-loess}). None of the
+others (Supporting materials Figs~\ref{fig:detrend}, \ref{fig:meta-detrend-loess}). None of the
 detrending options or alternative mean-variance extrapolations resulted in a
 similar pattern for both the mean-variance and average-CV PE.
 
@@ -437,7 +437,7 @@ can see that the average-CV PE responds inversely to z compared to the
 mean-variance PE, and this issue is prevalent for the parameter space observed
 in real ecological systems.
 (2)~The empirical PEs were strongly grouped by taxonomy (see also
-Fig.~\ref{fig:paramspace-labels}).
+Supporting materials Fig.~\ref{fig:paramspace-labels}).
 (3)
 %There were regions of the parameter space not occupied by empirical
 %metapopulations;
@@ -463,11 +463,11 @@ Fig.~\ref{fig:paramspace}) explained
 84\% of the variability in the average-CV PE and
 53\% of the mean-variance PE ($R^2$ from a regression
 of log theoretical PE and log empirical PE;
-Fig.~\ref{fig:PE-predicted-observed}). The factors driving the PE co-varied; in
+Supporting materials Fig.~\ref{fig:PE-predicted-observed}). The factors driving the PE co-varied; in
 particular, we observed high correlation of subpopulations associated with high
-variability (CV) and few subpopulations (Fig.~\ref{fig:factors-cor}b, c). High z
+variability (CV) and few subpopulations (Supporting materials Fig.~\ref{fig:factors-cor}b, c). High z
 values occurred when there were few moderately-to-highly correlated
-subpopulations (Fig.~\ref{fig:factors-cor}e, f).
+subpopulations (Supporting materials Fig.~\ref{fig:factors-cor}e, f).
 
 \section{Discussion}
 
@@ -508,7 +508,7 @@ particularly strong driver when density dependence generates chaotic dynamics
 \citep{perry1994}. In simplified theoretical systems, z will tend towards
 two under conditions that increase population synchrony (such as strong
 environmental forcing) and tend towards one under conditions that decrease
-synchrony (such as strong demographic stochasticity) \citep{loreau2010}.
+synchrony (such as strong demographic stochasticity) \citep{loreau2010a}.
 Second, competitive species interactions can affect z values.
 \citep{kilpatrick2003}. For example, if competition with other species
 impacts larger populations less than smaller populations, then z
@@ -592,7 +592,7 @@ need. For example, if we consider two otherwise similar metapopulations, the
 average-CV PE will always be the same or stronger for metapopulations divided
 into more subpopulations. However, the mean-variance PE indicates that there is
 a threshold at which subdivision no longer benefits metapopulation stability
-(Figs~\ref{fig:lines}a, \ref{fig:paramspace}a--i, \ref{fig:PE-as-an-index}).
+(Figs~\ref{fig:lines}a, \ref{fig:paramspace}a--i, Supporting materials Fig.\ \ref{fig:PE-as-an-index}).
 Second, used as an ecosystem index through time, the average-CV PE could fail to
 warn us of critical change or create the false impression of recovery. For
 example, if a reef fish metapopulation with a low z value and moderate evenness
@@ -626,7 +626,7 @@ The PE metrics measured in this paper are limited by the observational data to
 which they are typically applied.
 Recent mechanistic stability-diversity models that explicitly account for
 asynchrony of response to environmental conditions exist
-\citep[e.g.][]{ives2003, loreau2008, loreau2010,
+\citep[e.g.][]{ives2003, loreau2008, loreau2010a,
 demazancourt2013}
 but are still largely unexplored beyond theory. However, mechanistic
 stability-diversity models have at least two major problems. First, they must
@@ -778,7 +778,7 @@ University, and Fulbright Canada.
     (indicated in brackets beside each metapopulation name). Diamonds represent
     inverse-variance weighted random-effect (RE) meta-analytic means and 95\%
     CIs. Numbers before population names represent population IDs (see
-    Supplementary Table 1). PEs $>$ 1 (grey shading) represent stabilizing
+    Table~\ref{tab:datasources}). PEs $>$ 1 (grey shading) represent stabilizing
     effects; note the log-distributed x-axis. (b, c, d) Examples of using
     Taylor's power law to calculate the mean-variance PE. The solid black
     regression line projects the subpopulation mean-variance relationship to the

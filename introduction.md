@@ -1,3 +1,5 @@
+<!--TODO: definitions - use of PE?-->
+
 <!--# Notes from elsewhere:-->
 
 <!--Similar to ecologists, financial analysts have long been interested in how
@@ -59,7 +61,8 @@ covariance, stability, synchrony, and extremeness [@loreau2010a;
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=4in]{mmm-traits.pdf}
-\caption{Desirable traits of ecological metaphors, metrics, and management
+\caption[Desirable traits of ecological metaphors, metrics, and management
+approaches.]{Desirable traits of ecological metaphors, metrics, and management
 approaches (decision-making tools).}
 \label{fig:traits}
 \end{figure}
@@ -139,7 +142,7 @@ itself.
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=3in]{efficient-frontier-fig.pdf}
-\caption[An introduction to Modern Portfolio Theory mean-variance optimization.]{
+\caption[An introduction to modern portfolio theory mean-variance optimization.]{
 An introduction to modern portfolio theory mean-variance optimization. In
 finance, portfolios are formed by choosing how much to invest in various
 assets. Modern portfolio theory focuses on identifying the set of portfolios
@@ -215,12 +218,12 @@ years [@sornette2009].
 
 @taleb2007 wrote about the concept of heavy-tailed events in detail. He coined
 the term 'black swan' to refer to rare events with large impact that are
-typically rationalized in retrospect. For ornithologists, the discovery of a
-single black-coloured swan was sufficient to disprove the hypothesis that all
+typically rationalized in retrospect. For ornithologists, the discovery of
+a single black-coloured swan was sufficient to disprove the hypothesis that all
 swans are white. Many of the major events that have shaped human history could
 be considered black swans. For example, with hindsight, World War I and II, the
-great depression, and the spread of the Internet could be considered black swan
-events [@taleb2007]. In recent years, the fields of finance and sociology have
+great depression, and the spread of the Internet could be considered black
+swans [@taleb2007]. In recent years, the fields of finance and sociology have
 moved towards systematically measuring these heavy-tailed events [e.g.
 @sornette2009; @janczura2012; @johnson2013b].
 
@@ -280,18 +283,17 @@ covariance (Chapter 3), and extreme events (Chapter 4) in ecological systems.
 This introduction and Chapter 5 (General discussion) are written in the
 first-person singular. Chapters 2--4 are written in the first-person plural
 since they are derived from published manuscripts (Chapter 2 and 3) or from
-a manuscript that was written for submission to a journal (Chapter 4) with
-co-authors (noted at the start of each chapter). Portions of Chapter 1 and
-5 are derived from a draft manuscript co-authored with Nick Dulvy and Andrew
-Cooper. These chapters have also benefited from previous discussions with Jon
-Moore and Trevor Branch. For Chapters 2, 3, and 4, I wrote the code, analyzed
-the data, and wrote the first drafts of the text. The idea for Chapter 2 grew
-out of discussions between Nick Dulvy, Andrew Cooper, and myself. Jon Moore and
-Michelle McClure contributed their ideas for an unfinished manuscript which
-I merged with my own ideas to carry out Chapter 3. Trevor Branch first
-suggested I consider ecological black swans, the topic of Chapter 4. Chapters
-2, 3, and 4 benefited from discussions, editing, and comments from the
-co-authors listed at the beginning of each chapter.
+a manuscript that was written for submission to a journal with co-authors
+(Chapter 4). Portions of Chapters 1 and 5 are derived from a draft manuscript
+co-authored with Nick Dulvy and Andy Cooper. This draft manuscript has also
+benefited from previous discussions with Jon Moore and Trevor Branch. For
+Chapters 2, 3, and 4, I wrote the code, analyzed the data, and wrote the first
+drafts of the text. The idea for Chapter 2 grew out of discussions between Nick
+Dulvy, Andrew Cooper, and myself. Jon Moore and Michelle McClure contributed
+their ideas for a manuscript, which I merged with my own ideas to carry out
+Chapter 3. Trevor Branch first suggested I consider ecological black swans, the
+topic of Chapter 4. Chapters 2, 3, and 4 benefited from discussions, editing,
+and comments from the co-authors listed at the beginning of each chapter.
 
 <!--\renewcommand{\baselinestretch}{\tighttextstretch}-->
 <!--\normalsize-->

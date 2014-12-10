@@ -1,40 +1,40 @@
-\section{Supporting materials for Ecological prophets: quantifying metapopulation portfolio effects}
+\section{Supporting materials}
 
-\subsection{\texttt{R} package to estimate metapopulation portfolio effects}
+\subsection{R package to estimate metapopulation portfolio effects}
 
-In an \texttt{R} console, the \texttt{ecofolio} package can be installed either
-from the included source package (\texttt{.tar.gz} file)
+%In an R console, the ecofolio package can be installed either
+%from the included source package (\texttt{.tar.gz} file)
 %, from the Mac or
 %Windows binary packages (\texttt{.tgz} or \texttt{.zip}, respectively)
-or via the web (instructions below). First, install dependencies if needed:
+%or via the web (instructions below). First, install dependencies if needed:
 
-\begin{verbatim}
-install.packages(c("plyr", "reshape", "MuMIn", "robustbase"))
-\end{verbatim}
-
-\noindent
-Then, to install the included package:
-
-%install.packages("ecofolio_0.1.tar.gz", type = "source")
-
-\begin{verbatim}
-install.packages("mee312093-sup-0001-Sourcepackage.tar.gz", type = "source")
-\end{verbatim}
+% \begin{verbatim}
+% install.packages(c("plyr", "reshape", "MuMIn", "robustbase"))
+% \end{verbatim}
+%
+% \noindent
+% Then, to install the included package:
+%
+% %install.packages("ecofolio_0.1.tar.gz", type = "source")
+%
+% \begin{verbatim}
+% install.packages("mee312093-sup-0001-Sourcepackage.tar.gz", type = "source")
+% \end{verbatim}
 
 %install.packages("ecofolio_0.1.tgz") # Mac binary
 %install.packages("ecofolio_0.1.zip") # Windows binary
 
-\noindent
-or to install the current version from the web:
+%\noindent
+In an R console, the ecofolio package can be installed with,
 
 \begin{verbatim}
-install.packages("devtools") # if needed
-devtools::install_github("ecofolio", username = "seananderson")
+# install.packages("devtools") # if needed
+devtools::install_github("seananderson/ecofolio")
 \end{verbatim}
 
 \noindent
 Current code and install details are available at\\ \url{https://github.com/seananderson/ecofolio}
-\clearpage
+%\clearpage
 
 %Install details are available at:
 %\url{https://github.com/seananderson/ecofolio}
@@ -43,7 +43,7 @@ Current code and install details are available at\\ \url{https://github.com/sean
 You can load the package, read the vignette, and access the help pages with:
 
 \begin{verbatim}
-library(ecofolio)
+library("ecofolio")
 vignette("ecofolio")
 help(package = "ecofolio")
 \end{verbatim}
@@ -54,7 +54,7 @@ taxonomic groups as possible. However, due to availability, the included data
 primarily represent metapopulations in North America (salmon), the United
 Kingdom (moths), and Australia (reef fishes) (Figure~\ref{fig:map}). We show a
 summary of the data included in our analysis of empirical ecological systems
-in Table S1 and the time series in Figure~\ref{fig:ts}.
+in Table~\ref{tab:datasources} and the time series in Figure~\ref{fig:ts}.
 
 \subsubsection{Salmon}
 We obtained salmon data from a variety of sources, in particular
@@ -101,7 +101,7 @@ different species may show different responses to the traps
 \citep{muirhead-thomson1991, woiwod1992}, we compare across sites
 within the same species so this should not affect our results.
 
-Our moth data spanned from 1999--2010 for 13 species (Table~S1) and 28 sites
+Our moth data spanned from 1999--2010 for 13 species (Table~\ref{tab:datasources}) and 28 sites
 (Table~\ref{tab:ris-meta}). We included only moths with single broods per year
 (univoltine moths) and single annual flight episodes since we were aggregating
 the data annually to maintain consistency with data from other taxonomic
@@ -217,7 +217,7 @@ times the log-mean.
   \caption[Subpopulation time series]{
     Subpopulation time series. Each panel contains one metapopulation.
     Colours were randomly assigned to distinguish subpopulations.
-    Numbers in top-left corners refer to metapopulation IDs (see Table S1).
+    Numbers in top-left corners refer to metapopulation IDs (see Table~\ref{tab:datasources}).
   } \label{fig:ts}
 \end{figure}
 
@@ -228,7 +228,7 @@ times the log-mean.
   \caption[Map of included metapopulation]{
     Map of included metapopulations.  We represented salmon metapopulations
     with orange symbols, moths with purple, and reef fishes with pink.
-    Numbers refer to metapopulation IDs (Table~S1).  Points are jittered
+    Numbers refer to metapopulation IDs (Table~\ref{tab:datasources}).  Points are jittered
     slightly for visual clarity.
   }
   \label{fig:map}
@@ -251,7 +251,7 @@ times the log-mean.
     represent variance-reducing PEs.  We ordered the panels by decreasing
     Taylor's power law \zvalue\ (slope of the linear regression) within
     taxonomic groupings.  Numbers in upper left of panels refer to
-    metapopulation IDs (Supplementary Table 1)}
+    metapopulation IDs (Table~\ref{tab:datasources})}
 \label{fig:Taylor-fits}
 \end{figure}
 
@@ -363,7 +363,7 @@ times the log-mean.
     Figure~\ref{fig:paramspace}, and due to grouping the $CV_{mu}$ and
     correlation values from the metapopulations to match the displayed
     theoretical values in the bins.  Numbers indicate the metapopulation IDs
-    used throughout the paper (Table S1).  The solid sloped lines indicate
+    used throughout the paper (Table~\ref{tab:datasources}).  The solid sloped lines indicate
     one-to-one relationships.  Note that all axes have been log transformed
     and the two panels have separate axis limits.  }
   \label{fig:PE-predicted-observed}

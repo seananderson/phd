@@ -14,11 +14,10 @@ for extreme events in population ecology. Together, my thesis further develops
 the expanding field of ecological portfolios and in doing so contributes to our
 understanding of variance, covariance, and extreme events in ecological
 systems. In this general discussion, I summarize theoretical and methodological
-advances of my thesis. I conclude by considering future applied ecology and
-conservation challenges and questions for the field to address.
+advances made by this thesis. I conclude by considering future applied ecology
+and conservation challenges and questions for the field to address.
 
-Narrowing down to consider only the theoretical and methodological
-contributions of my thesis, my thesis makes a number of contributions to the
+My thesis makes a number of theoretical and methodological contributions to the
 study of variance and extremeness in ecology. I extend a classic feature of
 ecology---Taylor's power law---into an empirical tool. We can use this approach
 to ask questions about the stability of metapopulation (and possibly community)
@@ -36,9 +35,9 @@ illustrates and tests a heavy-tailed phenomenological population dynamics model
 that can easily by applied to commonly available abundance time series.
 
 My thesis also makes a number of software contributions. R packages and
-associated vignettes accompany my second and third chapters. The `ecofolio`
+associated vignettes accompany my second and third chapters. The ecofolio
 R package has already been used by the above-mentioned @mellin2014 and
-@siple2014. The `metafolio` R package is available on CRAN (Comprehensive
+@siple2014. The metafolio R package is available on CRAN (Comprehensive
 R Archive Network), is flexible in the ecological system it can represent, and,
 being written in C++, can be used to rapidly explore efficient frontiers of
 conservation prioritization through Monte Carlo simulation. My fourth chapter
@@ -47,7 +46,7 @@ Bayesian statistical software Stan to an ecological problem
 (<http://mc-stan.org/citations.html>). Estimating the degrees of freedom
 parameter in a t distribution is a challenging exercise [@gelman2014],
 particularly when fit as a state space model; Stan allowed for efficient
-sampling from these probability models. The source code for the `ecofolio`
+sampling from these probability models. The source code for the ecofolio
 R package is available at <https://github.com/seananderson/ecofolio> and the
 code to recreate all the analyses in my third and fourth chapters is available
 at <https://github.com/seananderson/metafolio> and
@@ -93,6 +92,7 @@ financial portfolio optimization to ecological portfolios, we may need to adopt
 methods that can incorporate measurement error. Solutions may include Bayesian
 methods, Monte Carlo simulation, and state space modelling [@morgan1990].
 
+<!--\clearpage-->
 \input{data-table.tex}
 
 While there are still problems to solve before we can fully explore the
@@ -111,7 +111,7 @@ application of quantitative portfolio concepts to ecology is likely to expand.
 How can we move ecological portfolios beyond an academic exercise to using
 their principles in applied management? The application of portfolio concepts
 to ecological systems is still a young discipline and there exist many
-important future questions to address. I outline three below.
+important future questions to address. I outline three of these questions below.
 
 First, how can the portfolio effect and portfolio optimization inform
 management and conservation and in what other contexts can it be applied? For
