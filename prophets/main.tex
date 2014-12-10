@@ -60,7 +60,7 @@ clearly a critical and undervalued component of ecological systems for resource
 management to conserve, yet there are few ways to quantify its benefit.
 
 The empirical portfolio effect (PE) is a rapidly popularized metric
-\citep[e.g.][]{schindler2010, carlson2011, iMCC2011} derived from
+\citep[e.g.][]{schindler2010, carlson2011, imcc2011} derived from
 theory introduced a decade earlier \citep{doak1998, tilman1998,
 tilman1999} that aims to measure the increase in stability due to
 subpopulation diversity within a metapopulation (or greater species diversity
@@ -76,10 +76,10 @@ financial portfolio by comparing the variability in returns from investing in a
 single asset to the variability from investing in a diversified portfolio
 \citep{markowitz1959}. In ecology, the empirical PE has been calculated by
 comparing the temporal coefficient of variation (CV) of metapopulation abundance
-(the diversified portfolio; Fig.~\ref{fig:didactic}a) to the average CV of
-subpopulation abundances (the single assets; Fig.~\ref{fig:didactic}b)
+(the diversified portfolio; Fig.~\ref{fig:didacticPE}a) to the average CV of
+subpopulation abundances (the single assets; Fig.~\ref{fig:didacticPE}b)
 \citep{secor2009, schindler2010, carlson2011}. We refer to this
-approach as the \index{average-CV PE}average-CV PE (Fig.~\ref{fig:didactic}c). But ecological and
+approach as the \index{average-CV PE}average-CV PE (Fig.~\ref{fig:didacticPE}c). But ecological and
 financial systems differ; it is timely to consider whether we can apply the same
 approach to ecological systems.
 
@@ -98,13 +98,32 @@ be less variable than expected if we applied the financial metaphor. The
 CV is not necessarily a size-independent metric of variability
 \citep{mcardle1990}.
 
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[height=4in]{prophets/fig1}
+  \caption[Estimating the two PEs from empirical data.]{
+  Estimating the two PEs from empirical data. (a, b) Example
+    metapopulation (portfolio) and subpopulation (asset) abundance time-series.
+    Horizontal lines represent the time-series' means and the shaded regions
+    represent variability. (c) We calculated the average-CV PE by dividing the
+    average CV of the subpopulations ($\CV_a$) by the CV of the metapopulation
+    ($\CV_p$). (d) We calculated the mean-variance PE by (1) plotting the mean
+    and variance of each subpopulation on log-log axes, (2) extrapolating the
+    subpopulation mean-variance relationship to the metapopulation mean
+    (open-grey circle), and (3) comparing the predicted (open-grey circle) and
+    observed (grey cross) metapopulation variability. Both methods will
+    estimate the same PE if the slope of the log-log plot (z) equals two.
+  }
+  \label{fig:didacticPE}
+\end{figure}
+
 The theoretical work of \citet{tilman1998} implies an alternative way to
 measure the empirical PE that accounts for the mean-variance relationship.
 Rather than assuming we can represent the variability of the theoretical
 homogeneous metapopulation (the single asset) by the average subpopulation CV,
 we can estimate the variance of the homogeneous metapopulation by extrapolating
 the mean-variance relationship to the observed metapopulation size
-(Fig.~\ref{fig:didactic}d). We can then compare this expected
+(Fig.~\ref{fig:didacticPE}d). We can then compare this expected
 homogeneous-population variability to the observed metapopulation variability
 to get what we call the \index{mean-variance PE}mean-variance PE. This mean-variance PE asks: If the
 mean-variance relationship continued to scale as we observed for larger and
@@ -259,7 +278,7 @@ subpopulation means.
 \subsubsection{Average-CV PE}
 
 We calculated the empirical average-CV PE\index{average-CV PE} as the ratio of the mean subpopulation
-CV to the observed metapopulation CV (Fig.~\ref{fig:didactic}c). We estimated
+CV to the observed metapopulation CV (Fig.~\ref{fig:didacticPE}c). We estimated
 confidence intervals by bootstrap; we sampled the subpopulations within each
 metapopulation 500 times, with replacement, and recalculated the PE. We then
 used the adjusted bootstrap percentile (BCa) 95\% confidence intervals
@@ -278,7 +297,7 @@ log($\mu$),
 \noindent where $\epsilon_i$ represents independent and identically distributed
 residual error with mean zero and an estimated variance. We used this model to
 predict the variance given the mean of the metapopulation abundance
-($\hat\sigma^2$; Fig.~\ref{fig:didactic}d). The $\hat\sigma^2$ reflects the
+($\hat\sigma^2$; Fig.~\ref{fig:didacticPE}d). The $\hat\sigma^2$ reflects the
 variance we would expect if the portfolio was composed of a homogeneous
 population. We then calculated the mean-variance PE as the ratio of
 observed $\sigma^2$ to predicted $\hat\sigma^2$. The mean-variance PE is
@@ -368,6 +387,28 @@ erroneously become more stabilizing as subpopulations become uneven; the
 mean-variance PE indicates that the PE would become less stabilizing at high z
 values or remain relatively constant at low z values (Fig.~\ref{fig:lines}c).
 
+\begin{figure}[htbp]
+  \centering \includegraphics[width=4.8in]{prophets/fig2}
+  \caption[The ecological factors driving the PE in theoretical systems.]{
+  The ecological factors driving the PE in theoretical systems. A PE of
+    two, for example, would indicate a two-fold increase in stability for the
+    portfolio compared to what we would expect in a single homogeneous
+    population of the same size. We show the mean-variance PE and average-CV PE
+    for three z values across (a) number of subpopulations, (b)
+    correlation between subpopulation time-series, and (c) unevenness of mean
+    subpopulation abundance. We generated uneven mean subpopulation abundances
+    by drawing four values at quantiles of 0.2, 0.4, 0.6, and 0.8
+    from a log-normal distribution
+    with log-mean $\mu$ ($\mu = 2$) and log-standard deviation of the
+    unevenness value (the x-axis) times $\mu$. We fixed correlation at 0.2 and subpopulation
+    number at four in all panels where these parameters weren't varying. The
+    grey-shading indicates stabilizing PEs. Both PE definitions are equal
+    across all scenarios at z = 2. In panels (a) and (b) the average-CV PE is
+    the same regardless of z.
+  } \label{fig:lines}
+\end{figure}
+
+
 \subsection{Empirical evaluation of portfolio effects}
 
 The key assumption that ecological systems have the same mean-variance
@@ -410,8 +451,31 @@ salmon (Fig.~\ref{fig:meta}b), it deviates strongly from the observed
 relationship for some moth and reef fish metapopulations (Fig.~\ref{fig:meta}c,
 d).
 
+%\clearpage
+\begin{figure}[htbp]
+  \centering \includegraphics[height=5.5in]{prophets/fig3}
+  \caption[PEs across 51 metapopulations.]{
+  PEs across 51 metapopulations. (a) Empirical PEs (circles) and 95\%
+    CIs (lines) for the mean-variance method and the average-CV PE method.
+    We ordered metapopulations within taxonomic groups by Taylor's law z values
+    (indicated in brackets beside each metapopulation name). Diamonds represent
+    inverse-variance weighted random-effect (RE) meta-analytic means and 95\%
+    CIs. Numbers before population names represent population IDs (see
+    Table~\ref{tab:datasources}). PEs $>$ 1 (grey shading) represent stabilizing
+    effects; note the log-distributed x-axis. (b, c, d) Examples of using
+    Taylor's power law to calculate the mean-variance PE. The solid black
+    regression line projects the subpopulation mean-variance relationship to the
+    metapopulation mean abundance (shaded grey circle). The $\times$ denotes the
+    observed metapopulation mean and variance. The ratio of the observed to
+    predicted variance represents the mean-variance PE. The red circle denotes
+    the average-CV PE and the dashed-red line the mean-variance relationship
+    under the assumption that z = 2, as the average-CV PE assumes.
+  }
+  \label{fig:meta}
+\end{figure}
+
 The mean-variance PE was highly sensitive to the estimation method
-(Supporting materials Fig.~\ref{fig:detrend}). In particular,
+(Fig.~\ref{fig:detrend}). In particular,
 13/18 reef fish metapopulations
 switched from destabilizing to stabilizing PEs with quadratic
 (Supporting materials Fig.~\ref{fig:meta-quad}) or quadratic-linear averaged
@@ -420,13 +484,30 @@ lower in 11/51 metapopulations and at least two
 units lower in 8/51, indicating
 increased support despite the added model complexity. Linear
 detrending generally created a similar mean-variance PE pattern to the original
-mean-variance PEs (Supporting materials Figs~\ref{fig:detrend}, \ref{fig:meta-detrend}). Loess
+mean-variance PEs (Fig.~\ref{fig:detrend}, Supporting materials Fig.\ \ref{fig:meta-detrend}). Loess
 detrending increased the mean-variance PE in
 34/51 cases and the average-CV PE
 in 34/51, lowering it in the
-others (Supporting materials Figs~\ref{fig:detrend}, \ref{fig:meta-detrend-loess}). None of the
+others (Fig.~\ref{fig:detrend}, Supporting materials Fig.~\ref{fig:meta-detrend-loess}). None of the
 detrending options or alternative mean-variance extrapolations resulted in a
 similar pattern for both the mean-variance and average-CV PE.
+
+%\clearpage
+\begin{figure}[htbp]
+  \centering \includegraphics[height=5in]{prophets/fig4}
+  \caption[The sensitivity of PE metrics across two detrending methods and three mean-variance model fits.]{
+  The sensitivity of PE metrics across two detrending (linear and
+    loess) methods (columns 2--3 and 5--6) and three mean-variance model fits
+    (columns 4, 7--8). Columns 1 and 4 represent the same PEs as shown in
+    Fig.~\ref{fig:meta}, but with colour indicating the strength of stabilizing
+    effect. Red indicates a stabilizing PE, blue indicates a destabilizing PE,
+    and white indicates a neutral PE. The y-axis shows the same metapopulation
+    IDs as Fig.~\ref{fig:meta}.
+  }
+  \label{fig:detrend}
+\end{figure}
+
+
 
 \subsection{Diagnosing the ecological properties of empirical portfolio effects}
 
@@ -457,6 +538,26 @@ versus \ref{fig:paramspace}l).
 %(and z was small enough) that the average-CV considerably overestimated the PE
 %compared to the mean-variance PE (Fig.~\ref{fig:paramspace}c versus
 %\ref{fig:paramspace}l).
+
+%\clearpage
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=\textwidth]{prophets/fig5}
+  \caption[Empirical ecological PEs overlaid in theoretical PE
+    parameter space.]{
+  Empirical ecological PEs (points) overlaid in theoretical PE
+    parameter space (colour shading). The colour shading indicates the
+    stabilizing-effect of the theoretical mean-variance PEs (a--i) and
+    average-CV PEs (j--r): red indicates a stabilizing effect and blue indicates
+    a destabilizing effect.
+    The dashed lines indicate neutral PEs. Columns from left to right
+    show systems with increasingly uneven subpopulation sizes,
+    and rows from top to bottom show systems with increasingly strong mean
+    correlation between subpopulation (see the Supporting
+    Information).
+  } \label{fig:paramspace}
+\end{figure}
+
 
 Predicting the PE using these four properties alone (binned as shown in
 Fig.~\ref{fig:paramspace}) explained
@@ -639,6 +740,23 @@ need for phenomenological metrics.
 
 \subsection{Practical recommendations for quantifying ecological portfolio effects}
 
+%\clearpage
+\begin{figure}[htbp]
+  \centering \includegraphics[width=5.2in]{prophets/fig6}
+  \caption[Decision tree showing options for quantifying ecological portfolios.]{
+  %\noindent
+  %\textbf{Fig.\ 6.}
+  Decision tree showing options for quantifying ecological portfolios.
+    Blue boxes in the middle column show questions to ask of the study system
+    and available data.
+    The orange boxes at the bottom represent the methods demonstrated in
+    this paper. The light-grey boxes along the sides show other options to
+    quantify ecological portfolios given different research questions, study
+    systems, and available data.
+  } \label{fig:recommendations}
+\end{figure}
+
+
 Given the need for phenomenological PE metrics, which metric should you
 chose? The answer depends on the research question and the scope of the
 ecological system and data (Fig.~\ref{fig:recommendations}). \textit{Research
@@ -656,6 +774,7 @@ stocks or a predator hunting a portfolio of species. These PE metrics
 are not necessarily appropriate for a community of species where complications
 such as multiple mean-variance relationships and trophic interactions may
 require different phenomenological models \citep{thibaut2013}.
+
 
 Assuming the research question, ecological system, and data are appropriate for
 the methods shown in this paper, we recommend the following when choosing
@@ -726,124 +845,12 @@ University, and Fulbright Canada.
 
 %    \clearpage
 %\section{Figures}
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[height=4in]{prophets/fig1}
-  \caption[Estimating the two PEs from empirical data.]{
-  Estimating the two PEs from empirical data. (a, b) Example
-    metapopulation (portfolio) and subpopulation (asset) abundance time-series.
-    Horizontal lines represent the time-series' means and the shaded regions
-    represent variability. (c) We calculated the average-CV PE by dividing the
-    average CV of the subpopulations ($\CV_a$) by the CV of the metapopulation
-    ($\CV_p$). (d) We calculated the mean-variance PE by (1) plotting the mean
-    and variance of each subpopulation on log-log axes, (2) extrapolating the
-    subpopulation mean-variance relationship to the metapopulation mean
-    (open-grey circle), and (3) comparing the predicted (open-grey circle) and
-    observed (grey cross) metapopulation variability. Both methods will
-    estimate the same PE if the slope of the log-log plot (z) equals two.
-  }
-  \label{fig:didactic}
-\end{figure}
-
-\clearpage
-\begin{figure}[htbp]
-  \centering \includegraphics[width=4.8in]{prophets/fig2}
-  \caption[The ecological factors driving the PE in theoretical systems.]{
-  The ecological factors driving the PE in theoretical systems. A PE of
-    two, for example, would indicate a two-fold increase in stability for the
-    portfolio compared to what we would expect in a single homogeneous
-    population of the same size. We show the mean-variance PE and average-CV PE
-    for three z values across (a) number of subpopulations, (b)
-    correlation between subpopulation time-series, and (c) unevenness of mean
-    subpopulation abundance. We generated uneven mean subpopulation abundances
-    by drawing four values at quantiles of 0.2, 0.4, 0.6, and 0.8
-    from a log-normal distribution
-    with log-mean $\mu$ ($\mu = 2$) and log-standard deviation of the
-    unevenness value (the x-axis) times $\mu$. We fixed correlation at 0.2 and subpopulation
-    number at four in all panels where these parameters weren't varying. The
-    grey-shading indicates stabilizing PEs. Both PE definitions are equal
-    across all scenarios at z = 2. In panels (a) and (b) the average-CV PE is
-    the same regardless of z.
-  } \label{fig:lines}
-\end{figure}
 
 %\bigskip
-\clearpage
-\begin{figure}[htbp]
-  \centering \includegraphics[height=5.5in]{prophets/fig3}
-  \caption[PEs across 51 metapopulations.]{
-  PEs across 51 metapopulations. (a) Empirical PEs (circles) and 95\%
-    CIs (lines) for the mean-variance method and the average-CV PE method.
-    We ordered metapopulations within taxonomic groups by Taylor's law z values
-    (indicated in brackets beside each metapopulation name). Diamonds represent
-    inverse-variance weighted random-effect (RE) meta-analytic means and 95\%
-    CIs. Numbers before population names represent population IDs (see
-    Table~\ref{tab:datasources}). PEs $>$ 1 (grey shading) represent stabilizing
-    effects; note the log-distributed x-axis. (b, c, d) Examples of using
-    Taylor's power law to calculate the mean-variance PE. The solid black
-    regression line projects the subpopulation mean-variance relationship to the
-    metapopulation mean abundance (shaded grey circle). The $\times$ denotes the
-    observed metapopulation mean and variance. The ratio of the observed to
-    predicted variance represents the mean-variance PE. The red circle denotes
-    the average-CV PE and the dashed-red line the mean-variance relationship
-    under the assumption that z = 2, as the average-CV PE assumes.
-  }
-  \label{fig:meta}
-\end{figure}
 %
 %\bigskip
-\clearpage
-\begin{figure}[htbp]
-  \centering \includegraphics[height=5in]{prophets/fig4}
-  \caption[The sensitivity of PE metrics across two detrending methods and three mean-variance model fits.]{
-  The sensitivity of PE metrics across two detrending (linear and
-    loess) methods (columns 2--3 and 5--6) and three mean-variance model fits
-    (columns 4, 7--8). Columns 1 and 4 represent the same PEs as shown in
-    Fig.~\ref{fig:meta}, but with colour indicating the strength of stabilizing
-    effect. Red indicates a stabilizing PE, blue indicates a destabilizing PE,
-    and white indicates a neutral PE. The y-axis shows the same metapopulation
-    IDs as Fig.~\ref{fig:meta}.
-  }
-  \label{fig:detrend}
-\end{figure}
-
 %\bigskip
-\clearpage
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=\textwidth]{prophets/fig5}
-  \caption[Empirical ecological PEs overlaid in theoretical PE
-    parameter space.]{
-  Empirical ecological PEs (points) overlaid in theoretical PE
-    parameter space (colour shading). The colour shading indicates the
-    stabilizing-effect of the theoretical mean-variance PEs (a--i) and
-    average-CV PEs (j--r): red indicates a stabilizing effect and blue indicates
-    a destabilizing effect.
-    The dashed lines indicate neutral PEs. Columns from left to right
-    show systems with increasingly uneven subpopulation sizes,
-    and rows from top to bottom show systems with increasingly strong mean
-    correlation between subpopulation (see the Supporting
-    Information).
-  } \label{fig:paramspace}
-\end{figure}
-
 %\bigskip
-\clearpage
-\begin{figure}[htbp]
-  \centering \includegraphics[width=5.2in]{prophets/fig6}
-  \caption[Decision tree showing options for quantifying ecological portfolios.]{
-  %\noindent
-  %\textbf{Fig.\ 6.}
-  Decision tree showing options for quantifying ecological portfolios.
-    Blue boxes in the middle column show questions to ask of the study system
-    and available data.
-    The orange boxes at the bottom represent the methods demonstrated in
-    this paper. The light-grey boxes along the sides show other options to
-    quantify ecological portfolios given different research questions, study
-    systems, and available data.
-  } \label{fig:recommendations}
-\end{figure}
-
 \clearpage
 \input{prophets/som}
 
