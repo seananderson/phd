@@ -10,22 +10,22 @@ output:
 
 # Introduction
 
-*quote slide*\
+*quote slide*  
 "Population ecology is about understanding fluctuations in numbers over time and space." -Koenig 1999 TREE
 
-*sheep in scotland slide*\
+*sheep in scotland slide*  
 these feral sheep populations on two separate islands in Scotland have synchronized boom and bust cycles. Why?
 
-*salmon slide*\
+*salmon slide*  
 Chinook populations in Alaska are on average XX times less variable than populations in Sacramento ... why?
 
-*?? schindler paper? or from Moore et al. Ecology?*\
+*?? schindler paper? or from Moore et al. Ecology?*  
 And this fishery is X times less likely to have a 'bad' year than this fishery. Why?
 
-*understanding and decision making slide*\
+*understanding and decision making slide*  
 These questions are important to our understanding of how the ecological world works, but also to making better decisions for local resource management, and to guiding large-scale policy decisions.
 
-*jelly beans*\
+*jelly beans*  
 One realization that developed over the last 50 years or so is that there may be a link between how diverse a system is and how stable it is.
 
 This might be, for example, species diversity, or genetic diversity, or the diversity of how organisms respond to the environment.
@@ -34,10 +34,10 @@ And it might be measured within a single area or community, or across multiple c
 
 Through all of this, it starts to become apparent that the question of what makes systems more or less variable is not a simple one and can be asked at many different scales and from many different angles.
 
-*silhouette graphics of different coloured dots, thermometer, lots of people*\
+*silhouette graphics of different coloured dots, thermometer, lots of people*  
 But it's an important question. Diversity is being lost at an unprecedented rate and is very slow to recover. Climate change is inducing conditions that are challenging the ability for many species to adapt. And human population is growing and making it increasingly imperative that we manage our oceans and land in a way ...
 
-*tools slide*\
+*tools slide*  
 So, we need tools to quantifying the benefits of various kinds of diversity.
 We need ways of communicating the benefits of diversity.
 And we need ways of making good decisions about how we allocate conservation effort to limit risk in the face of uncertainty about future environmental conditions.
@@ -72,12 +72,12 @@ This idea has been explored in the ecology literature for about 15 years now. Bu
 
 In my thesis I: 
 
-*Measuring portfolio effects (Ch. 1) (Anderson et al. 2013, Methods Ecol. Evol.)*\ Examine how we measure how much better ecological systems are by acting as diversity portfolios
+*Measuring portfolio effects (Ch. 1) (Anderson et al. 2013, Methods Ecol. Evol.)*   Examine how we measure how much better ecological systems are by acting as diversity portfolios
 
-*Portfolio conservation (Ch. 2) (Anderson et al. In press. Ecol. Appl.)* \
+*Portfolio conservation (Ch. 2) (Anderson et al. In press. Ecol. Appl.)*  
 Ask how we can manage salmon metapopulation portfolios to...
 
-*Black swan dynamics (Ch. 3)* \
+*Black swan dynamics (Ch. 3)*  
 Ask how the concept of extreme risk, or black swans, from financial portfolios applies to ecological populations.
 
 
