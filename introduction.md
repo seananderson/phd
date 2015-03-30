@@ -274,7 +274,7 @@ events are almost always downwards events, which given previous work on the
 importance of catastrophes to population persistence times, has important
 implications for estimates of extinction risk that typically rely on
 normal-tailed population dynamics. Together, my thesis expands our
-understanding ecological portfolios and in doing so contributes to our
+understanding of ecological portfolios and in doing so contributes to our
 understanding of variance and covariance (Chapter 2), managing for variance and
 covariance (Chapter 3), and extreme events (Chapter 4) in ecological systems.
 
